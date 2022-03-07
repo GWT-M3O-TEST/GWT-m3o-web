@@ -10,7 +10,7 @@ class Client {
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.onreadystatechange = function () {
       if (xmlHttp.readyState == 4);
-      callback(JSON.parse(xmlHttp.responseText), xmlHttp.status);
+      callback(xmlHttp.responseText, xmlHttp.status);
     };
     xmlHttp.open("POST", "https://api.m3o.com" + path, true); // true for asynchronous
     xmlHttp.setRequestHeader("Authorization", "Bearer " + this.token);
