@@ -1,10 +1,7 @@
 <html>
-  <head>
-    <script src="index.js"></script>
-  </head>
   <body>
     <div id="client">
-      <form id="client-call">
+      <form id="client-call" onsubmit="call()">
         <div>
           <input name="token" id="token" placeholder="token">
         </div>
@@ -22,21 +19,5 @@
     </div>
     <div id="response"></div>
   </body>
-  <script>
-      var form = document.getElementById("client-call");
-      form.addEventListener("submit", function(el) {
-        el.preventDefault();
-
-        var token = form.elements["token"].value;
-        var service = form.elements["service"].value;
-        var endpoint = form.elements["endpoint"].value;
-        var request = form.elements["request"].value;
-
-        var m3o = new Client(token);
-
-        m3o.call(service, endpoint, request, function(response) {
-          document.getElementById("response").innerText = response;
-        });
-      });
-  </script>
+  <script src="index.js"></script>
 </html>

@@ -18,3 +18,17 @@ class Client {
     xmlHttp.send(request);
   }
 }
+
+function call() {
+      var form = document.getElementById("client-call");
+      var token = form.elements["token"].value;
+      var service = form.elements["service"].value;
+      var endpoint = form.elements["endpoint"].value;
+      var request = form.elements["request"].value;
+
+      var m3o = new Client(token);
+
+      m3o.call(service, endpoint, request, function(response) {
+        document.getElementById("response").innerText = response;
+      });
+}
