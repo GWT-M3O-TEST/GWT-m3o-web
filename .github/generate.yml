@@ -1,0 +1,112 @@
+name: Build M3O Web
+on:
+  repository_dispatch:
+    types: [build_publish_web]
+
+jobs:
+  generate:
+    name: build M3O Web
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Set up Go 1.13
+        uses: actions/setup-go@v2
+        with:
+          go-version: 1.13
+        id: go
+      
+      - name: Install Protoc
+        uses: arduino/setup-protoc@master
+      
+      - name: Check GWT-m3o repo
+        uses: actions/checkout@v2
+        with:
+          repository: 'GWT-M3O-TEST/GWT-m3o'
+          path: m3o
+
+      - name: Check micro/services repo
+        uses: actions/checkout@v2
+        with:
+          repository: 'micro/services'
+          path: services
+
+      - name: Check micro repo
+        uses: actions/checkout@v2
+        with:
+          repository: 'micro/micro'
+          path: 'micro'
+          ref: 'master'
+      
+      - name: Check GWT-m3o-web repo
+        uses: actions/checkout@v2
+        with:
+          repository: 'GWT-M3O-TEST/GWT-m3o-web'
+          path: m3o-web
+      
+      - name: Enable caching
+        uses: actions/cache@v2
+        with:
+          path: ~/go/pkg/mod
+          key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-go-
+
+      - name: Install protoc gen micro plugin
+        working-directory: micro/cmd/protoc-gen-micro
+        run: |
+          go get -u github.com/golang/protobuf/protoc-gen-go
+          go install
+      
+      - name: Install openapi plugin
+        working-directory: m3o/cmd/protoc-gen-openapi
+        run: |
+          go install
+
+      - name: Install generator
+        working-directory: m3o
+        run: |
+          # build the client generator
+          pwd
+          cd cmd/client-gen;
+          go install
+          cd ../../
+          # delete existing cmd directory
+          rm -rf ../services/cmd
+          # copy our command directory in
+          cp -r cmd ../services/
+      
+      - name: Generate M3O Web
+        working-directory: services
+        if: github.ref == 'refs/heads/master'
+        run: |
+          rm -rf clients examples
+          client-gen web
+
+      - name: Adjust generated things before pushing
+        working-directory: services
+        if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/beta'
+        run: |
+          # sync the clients to m3o-web/html
+          rsync -avz clients/web/* ../m3o-web/html/
+      
+      # https://stackoverflow.com/questions/58033366/how-to-get-current-branch-within-github-actions
+      - name: Extract branch name
+        shell: bash
+        run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+        id: extract_branch
+
+      - name: Push M3O Web clients
+        uses: dmnemec/copy_file_to_another_repo_action@main
+        if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/beta'
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source_file: 'm3o-web/html/'
+          destination_repo: 'GWT-M3O-TEST/GWT-m3o-web'
+          destination_branch: ${{ steps.extract_branch.outputs.branch }}
+          destination_folder: 'html/'
+          git_server: 'github.com'
+          user_email:  'danieljoudat@gmail.com'
+          user_name: 'lambdaR'
+          use_rsync: true
+          commit_message: 'Commit from GWT-M3O-TEST/GWT-m3o action'
