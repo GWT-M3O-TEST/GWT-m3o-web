@@ -1,4 +1,4 @@
-class Client {
+export default class Client {
   constructor(token) {
     this.token = token;
   }
