@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+	<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+	<title>M3O Web</title>
+	</head>
+	<body>
+	<div id="memegen" class="container">
+		<div class="row">
+    		<div class="col">
+			<form id="generate">
+				<div class="mb-3">
+					<label for="service" class="form-label fs-1 fw-bold">memegen</label>
+					<input type="hidden" class="form-control" id="service" value="memegen">
+		  		</div>
+				<div class="mb-3">
+					<label for="endpoint" class="form-label fs-2 fw-bold">Generate</label>
+				  	<input type="hidden" class="form-control" id="endpoint" value="Generate">
+				  	<div id="endpointDesc" class="form-text"><i>Generate a meme using a template</i></div>
+				</div>
+				<div class="mb-3">
+              		<label for="token" class="form-label">Token</label>
+              		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="bottom_text" class="form-label">bottom_text</label>
+              		<input class="form-control" id="bottom_text" placeholder="bottom text">
+            	</div>
+				<div class="mb-3">
+              		<label for="font" class="form-label">font</label>
+              		<input class="form-control" id="font" placeholder="font: arial or impact">
+            	</div>
+				<div class="mb-3">
+              		<label for="id" class="form-label">id</label>
+              		<input class="form-control" id="id" placeholder="the template id to use">
+            	</div>
+				<div class="mb-3">
+              		<label for="max_font_size" class="form-label">max_font_size</label>
+              		<input class="form-control" id="max_font_size" placeholder="font size; defaults to 50px">
+            	</div>
+				<div class="mb-3">
+              		<label for="top_text" class="form-label">top_text</label>
+              		<input class="form-control" id="top_text" placeholder="top text">
+            	</div>
+				<button type="button" class="btn btn-primary" onclick="memegenGenerate()">Submit</button>
+			</form>
+    		</div>
+    		<div class="col-6">
+				<p class="fs-1 fw-bold text-center">JSON</p>
+				<div>
+					<pre>
+						<code id="json"></code>
+					</pre>
+				</div>
+    		</div>
+    		<div class="col">
+				<p class="fs-1 fw-bold text-center">ViewTree</p>
+				<div id="viewtree"></div>
+    		</div>
+  		</div>
+  		</br>
+  		<div class="row" id="restable"></div>
+	</div>
+	</body>
+	<script type="module" src="generate.js"></script>
+</html>
