@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+	<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+	<title>M3O Web</title>
+	</head>
+	<body>
+	<div id="rss" class="container">
+		<div class="row">
+    		<div class="col">
+			<form id="feed">
+				<div class="mb-3">
+					<label for="service" class="form-label fs-1 fw-bold">rss</label>
+					<input type="hidden" class="form-control" id="service" value="rss">
+		  		</div>
+				<div class="mb-3">
+					<label for="endpoint" class="form-label fs-2 fw-bold">Feed</label>
+				  	<input type="hidden" class="form-control" id="endpoint" value="Feed">
+				  	<div id="endpointDesc" class="form-text"><i>Get an RSS feed by name. If no name is given, all feeds are returned. Default limit is 25 entries.</i></div>
+				</div>
+				<div class="mb-3">
+              		<label for="token" class="form-label">Token</label>
+              		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="limit" class="form-label">limit</label>
+              		<input class="form-control" id="limit" placeholder="limit entries returned">
+            	</div>
+				<div class="mb-3">
+              		<label for="name" class="form-label">name</label>
+              		<input class="form-control" id="name" placeholder="rss feed name">
+            	</div>
+				<div class="mb-3">
+              		<label for="offset" class="form-label">offset</label>
+              		<input class="form-control" id="offset" placeholder="offset entries">
+            	</div>
+				<button type="button" class="btn btn-primary" onclick="rssFeed()">Submit</button>
+			</form>
+    		</div>
+    		<div class="col-6">
+				<p class="fs-1 fw-bold text-center">JSON</p>
+				<div>
+					<pre>
+						<code id="json"></code>
+					</pre>
+				</div>
+    		</div>
+    		<div class="col">
+				<p class="fs-1 fw-bold text-center">ViewTree</p>
+				<div id="viewtree"></div>
+    		</div>
+  		</div>
+	</div>
+	</body>
+	<script type="module" src="feed.js"></script>
+</html>
