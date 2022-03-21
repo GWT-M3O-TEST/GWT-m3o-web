@@ -15,6 +15,20 @@ window.postcodeRandom = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">country</th>
+			
+			<th scope="col">district</th>
+			
+			<th scope="col">latitude</th>
+			
+			<th scope="col">longitude</th>
+			
+			<th scope="col">postcode</th>
+			
+			<th scope="col">region</th>
+			
+			<th scope="col">ward</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

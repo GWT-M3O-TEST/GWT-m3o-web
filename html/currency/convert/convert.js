@@ -5,16 +5,7 @@ window.currencyConvert = function () {
 	let token = document.getElementById("token").value;
 	let service = document.getElementById("service").value;
 	let endpoint = document.getElementById("endpoint").value;
-	let amount = document.getElementById("amount").value;
-	let from = document.getElementById("from").value;
-	let to = document.getElementById("to").value;
 	let obj = new Object();
-	obj.amount = amount;
-	
-	obj.from = from;
-	
-	obj.to = to;
-	
 	let request = JSON.stringify(obj);
 
 	let m3o = new Client(token);
@@ -24,6 +15,14 @@ window.currencyConvert = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">amount</th>
+			
+			<th scope="col">from</th>
+			
+			<th scope="col">rate</th>
+			
+			<th scope="col">to</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

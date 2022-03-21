@@ -22,31 +22,11 @@
 				<div class="mb-3">
 					<label for="endpoint" class="form-label fs-2 fw-bold">Search</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Search">
-				  	<div id="endpointDesc" class="form-text"><i>Search for a GIF</i></div>
+				  	<div id="endpointDesc" class="form-text"><i></i></div>
 				</div>
 				<div class="mb-3">
               		<label for="token" class="form-label">Token</label>
               		<input class="form-control" id="token">
-            	</div>
-				<div class="mb-3">
-              		<label for="lang" class="form-label">lang</label>
-              		<input class="form-control" id="lang" placeholder="ISO 2 letter language code for regional content">
-            	</div>
-				<div class="mb-3">
-              		<label for="limit" class="form-label">limit</label>
-              		<input class="form-control" id="limit" placeholder="Max number of gifs to return. Defaults to 25">
-            	</div>
-				<div class="mb-3">
-              		<label for="offset" class="form-label">offset</label>
-              		<input class="form-control" id="offset" placeholder="The start position of results (used with pagination)">
-            	</div>
-				<div class="mb-3">
-              		<label for="query" class="form-label">query</label>
-              		<input class="form-control" id="query" placeholder="The search term">
-            	</div>
-				<div class="mb-3">
-              		<label for="rating" class="form-label">rating</label>
-              		<input class="form-control" id="rating" placeholder="Apply age related content filter. "g", "pg", "pg-13", or "r". Defaults to "g"">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="gifsSearch()">Submit</button>
 			</form>

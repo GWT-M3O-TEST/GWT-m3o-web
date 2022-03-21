@@ -5,13 +5,7 @@ window.streamSendMessage = function () {
 	let token = document.getElementById("token").value;
 	let service = document.getElementById("service").value;
 	let endpoint = document.getElementById("endpoint").value;
-	let channel = document.getElementById("channel").value;
-	let text = document.getElementById("text").value;
 	let obj = new Object();
-	obj.channel = channel;
-	
-	obj.text = text;
-	
 	let request = JSON.stringify(obj);
 
 	let m3o = new Client(token);

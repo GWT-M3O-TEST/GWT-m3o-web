@@ -15,6 +15,14 @@ window.carbonOffset = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">metric</th>
+			
+			<th scope="col">projects</th>
+			
+			<th scope="col">tonnes</th>
+			
+			<th scope="col">units</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

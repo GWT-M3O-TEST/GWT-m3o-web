@@ -5,13 +5,7 @@ window.chatInvite = function () {
 	let token = document.getElementById("token").value;
 	let service = document.getElementById("service").value;
 	let endpoint = document.getElementById("endpoint").value;
-	let room_id = document.getElementById("room_id").value;
-	let user_id = document.getElementById("user_id").value;
 	let obj = new Object();
-	obj.room_id = room_id;
-	
-	obj.user_id = user_id;
-	
 	let request = JSON.stringify(obj);
 
 	let m3o = new Client(token);
@@ -21,6 +15,8 @@ window.chatInvite = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">room</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

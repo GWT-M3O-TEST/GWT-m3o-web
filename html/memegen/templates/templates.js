@@ -15,6 +15,8 @@ window.memegenTemplates = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">templates</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

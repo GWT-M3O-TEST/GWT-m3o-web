@@ -15,8 +15,6 @@ window.space = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
-			<th scope="col">object</th>
-			
 		  </tr>
 		</thead>
 		<tbody>

@@ -5,10 +5,7 @@ window.jokeRandom = function () {
 	let token = document.getElementById("token").value;
 	let service = document.getElementById("service").value;
 	let endpoint = document.getElementById("endpoint").value;
-	let count = document.getElementById("count").value;
 	let obj = new Object();
-	obj.count = count;
-	
 	let request = JSON.stringify(obj);
 
 	let m3o = new Client(token);
@@ -18,6 +15,8 @@ window.jokeRandom = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">jokes</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

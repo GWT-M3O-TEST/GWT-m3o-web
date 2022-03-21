@@ -5,10 +5,7 @@ window.postcodeLookup = function () {
 	let token = document.getElementById("token").value;
 	let service = document.getElementById("service").value;
 	let endpoint = document.getElementById("endpoint").value;
-	let postcode = document.getElementById("postcode").value;
 	let obj = new Object();
-	obj.postcode = postcode;
-	
 	let request = JSON.stringify(obj);
 
 	let m3o = new Client(token);
@@ -18,6 +15,20 @@ window.postcodeLookup = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">country</th>
+			
+			<th scope="col">district</th>
+			
+			<th scope="col">latitude</th>
+			
+			<th scope="col">longitude</th>
+			
+			<th scope="col">postcode</th>
+			
+			<th scope="col">region</th>
+			
+			<th scope="col">ward</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

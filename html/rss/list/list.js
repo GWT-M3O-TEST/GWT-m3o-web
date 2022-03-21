@@ -15,6 +15,8 @@ window.rssList = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">feeds</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

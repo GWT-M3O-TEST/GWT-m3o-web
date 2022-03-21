@@ -5,13 +5,7 @@ window.functionUpdate = function () {
 	let token = document.getElementById("token").value;
 	let service = document.getElementById("service").value;
 	let endpoint = document.getElementById("endpoint").value;
-	let name = document.getElementById("name").value;
-	let source = document.getElementById("source").value;
 	let obj = new Object();
-	obj.name = name;
-	
-	obj.source = source;
-	
 	let request = JSON.stringify(obj);
 
 	let m3o = new Client(token);

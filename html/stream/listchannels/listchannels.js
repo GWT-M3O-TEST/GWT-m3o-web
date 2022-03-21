@@ -15,6 +15,8 @@ window.streamListChannels = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">channels</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

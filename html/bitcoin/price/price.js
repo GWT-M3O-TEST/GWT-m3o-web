@@ -5,10 +5,7 @@ window.bitcoinPrice = function () {
 	let token = document.getElementById("token").value;
 	let service = document.getElementById("service").value;
 	let endpoint = document.getElementById("endpoint").value;
-	let symbol = document.getElementById("symbol").value;
 	let obj = new Object();
-	obj.symbol = symbol;
-	
 	let request = JSON.stringify(obj);
 
 	let m3o = new Client(token);
@@ -18,6 +15,10 @@ window.bitcoinPrice = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">price</th>
+			
+			<th scope="col">symbol</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

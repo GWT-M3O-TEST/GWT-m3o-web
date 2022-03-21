@@ -15,8 +15,6 @@ window.location = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
-			<th scope="col">entity</th>
-			
 		  </tr>
 		</thead>
 		<tbody>

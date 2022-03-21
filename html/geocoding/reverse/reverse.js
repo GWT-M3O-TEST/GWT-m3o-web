@@ -5,13 +5,7 @@ window.geocodingReverse = function () {
 	let token = document.getElementById("token").value;
 	let service = document.getElementById("service").value;
 	let endpoint = document.getElementById("endpoint").value;
-	let latitude = document.getElementById("latitude").value;
-	let longitude = document.getElementById("longitude").value;
 	let obj = new Object();
-	obj.latitude = latitude;
-	
-	obj.longitude = longitude;
-	
 	let request = JSON.stringify(obj);
 
 	let m3o = new Client(token);
@@ -21,6 +15,10 @@ window.geocodingReverse = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">address</th>
+			
+			<th scope="col">location</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

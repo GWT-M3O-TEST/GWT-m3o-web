@@ -5,13 +5,7 @@ window.cacheIncrement = function () {
 	let token = document.getElementById("token").value;
 	let service = document.getElementById("service").value;
 	let endpoint = document.getElementById("endpoint").value;
-	let key = document.getElementById("key").value;
-	let value = document.getElementById("value").value;
 	let obj = new Object();
-	obj.key = key;
-	
-	obj.value = value;
-	
 	let request = JSON.stringify(obj);
 
 	let m3o = new Client(token);
@@ -21,6 +15,10 @@ window.cacheIncrement = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">key</th>
+			
+			<th scope="col">value</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

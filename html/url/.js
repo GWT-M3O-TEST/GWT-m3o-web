@@ -15,8 +15,6 @@ window.url = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
-			<th scope="col">urlPairs</th>
-			
 		  </tr>
 		</thead>
 		<tbody>

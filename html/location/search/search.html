@@ -22,27 +22,11 @@
 				<div class="mb-3">
 					<label for="endpoint" class="form-label fs-2 fw-bold">Search</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Search">
-				  	<div id="endpointDesc" class="form-text"><i>Search for entities in a given radius</i></div>
+				  	<div id="endpointDesc" class="form-text"><i></i></div>
 				</div>
 				<div class="mb-3">
               		<label for="token" class="form-label">Token</label>
               		<input class="form-control" id="token">
-            	</div>
-				<div class="mb-3">
-              		<label for="center" class="form-label">center</label>
-              		<textarea rows="4" class="form-control" id="center" placeholder="Central position to search from"></textarea>
-            	</div>
-				<div class="mb-3">
-              		<label for="numEntities" class="form-label">numEntities</label>
-              		<input class="form-control" id="numEntities" placeholder="Maximum number of entities to return">
-            	</div>
-				<div class="mb-3">
-              		<label for="radius" class="form-label">radius</label>
-              		<input class="form-control" id="radius" placeholder="radius in meters">
-            	</div>
-				<div class="mb-3">
-              		<label for="type" class="form-label">type</label>
-              		<input class="form-control" id="type" placeholder="type of entities to filter">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="locationSearch()">Submit</button>
 			</form>

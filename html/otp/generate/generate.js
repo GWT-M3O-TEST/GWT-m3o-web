@@ -5,16 +5,7 @@ window.otpGenerate = function () {
 	let token = document.getElementById("token").value;
 	let service = document.getElementById("service").value;
 	let endpoint = document.getElementById("endpoint").value;
-	let expiry = document.getElementById("expiry").value;
-	let id = document.getElementById("id").value;
-	let size = document.getElementById("size").value;
 	let obj = new Object();
-	obj.expiry = expiry;
-	
-	obj.id = id;
-	
-	obj.size = size;
-	
 	let request = JSON.stringify(obj);
 
 	let m3o = new Client(token);
@@ -24,6 +15,8 @@ window.otpGenerate = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">code</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

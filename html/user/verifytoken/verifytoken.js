@@ -5,10 +5,7 @@ window.userVerifyToken = function () {
 	let token = document.getElementById("token").value;
 	let service = document.getElementById("service").value;
 	let endpoint = document.getElementById("endpoint").value;
-	let token = document.getElementById("token").value;
 	let obj = new Object();
-	obj.token = token;
-	
 	let request = JSON.stringify(obj);
 
 	let m3o = new Client(token);
@@ -18,6 +15,12 @@ window.userVerifyToken = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">is_valid</th>
+			
+			<th scope="col">message</th>
+			
+			<th scope="col">session</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

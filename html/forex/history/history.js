@@ -5,10 +5,7 @@ window.forexHistory = function () {
 	let token = document.getElementById("token").value;
 	let service = document.getElementById("service").value;
 	let endpoint = document.getElementById("endpoint").value;
-	let symbol = document.getElementById("symbol").value;
 	let obj = new Object();
-	obj.symbol = symbol;
-	
 	let request = JSON.stringify(obj);
 
 	let m3o = new Client(token);
@@ -18,6 +15,20 @@ window.forexHistory = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">close</th>
+			
+			<th scope="col">date</th>
+			
+			<th scope="col">high</th>
+			
+			<th scope="col">low</th>
+			
+			<th scope="col">open</th>
+			
+			<th scope="col">symbol</th>
+			
+			<th scope="col">volume</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

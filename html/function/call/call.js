@@ -5,13 +5,7 @@ window.functionCall = function () {
 	let token = document.getElementById("token").value;
 	let service = document.getElementById("service").value;
 	let endpoint = document.getElementById("endpoint").value;
-	let name = document.getElementById("name").value;
-	let request = document.getElementById("request").value;
 	let obj = new Object();
-	obj.name = name;
-	
-	obj.request = request;
-	
 	let request = JSON.stringify(obj);
 
 	let m3o = new Client(token);
@@ -21,6 +15,8 @@ window.functionCall = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">response</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

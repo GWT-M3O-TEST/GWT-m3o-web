@@ -5,16 +5,7 @@ window.searchIndex = function () {
 	let token = document.getElementById("token").value;
 	let service = document.getElementById("service").value;
 	let endpoint = document.getElementById("endpoint").value;
-	let data = document.getElementById("data").value;
-	let id = document.getElementById("id").value;
-	let index = document.getElementById("index").value;
 	let obj = new Object();
-	obj.data = data;
-	
-	obj.id = id;
-	
-	obj.index = index;
-	
 	let request = JSON.stringify(obj);
 
 	let m3o = new Client(token);
@@ -24,6 +15,8 @@ window.searchIndex = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">record</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

@@ -22,31 +22,11 @@
 				<div class="mb-3">
 					<label for="endpoint" class="form-label fs-2 fw-bold">OrderBook</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="OrderBook">
-				  	<div id="endpointDesc" class="form-text"><i>Get the historic order book and each trade by timestamp</i></div>
+				  	<div id="endpointDesc" class="form-text"><i></i></div>
 				</div>
 				<div class="mb-3">
               		<label for="token" class="form-label">Token</label>
               		<input class="form-control" id="token">
-            	</div>
-				<div class="mb-3">
-              		<label for="date" class="form-label">date</label>
-              		<input class="form-control" id="date" placeholder="the date in format YYYY-MM-dd">
-            	</div>
-				<div class="mb-3">
-              		<label for="end" class="form-label">end</label>
-              		<input class="form-control" id="end" placeholder="optional RFC3339Nano end time e.g 2006-01-02T15:04:05.999999999Z07:00">
-            	</div>
-				<div class="mb-3">
-              		<label for="limit" class="form-label">limit</label>
-              		<input class="form-control" id="limit" placeholder="limit number of prices">
-            	</div>
-				<div class="mb-3">
-              		<label for="start" class="form-label">start</label>
-              		<input class="form-control" id="start" placeholder="optional RFC3339Nano start time e.g 2006-01-02T15:04:05.999999999Z07:00">
-            	</div>
-				<div class="mb-3">
-              		<label for="stock" class="form-label">stock</label>
-              		<input class="form-control" id="stock" placeholder="stock to retrieve e.g AAPL">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="stockOrderBook()">Submit</button>
 			</form>

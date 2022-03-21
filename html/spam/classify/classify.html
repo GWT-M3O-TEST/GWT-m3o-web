@@ -22,35 +22,11 @@
 				<div class="mb-3">
 					<label for="endpoint" class="form-label fs-2 fw-bold">Classify</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Classify">
-				  	<div id="endpointDesc" class="form-text"><i>Check whether an email is likely to be spam based on its attributes</i></div>
+				  	<div id="endpointDesc" class="form-text"><i></i></div>
 				</div>
 				<div class="mb-3">
               		<label for="token" class="form-label">Token</label>
               		<input class="form-control" id="token">
-            	</div>
-				<div class="mb-3">
-              		<label for="email_body" class="form-label">email_body</label>
-              		<input class="form-control" id="email_body" placeholder="The raw body of the email including headers etc per RFC 822. Alternatively, use the other parameters to correctly format the message">
-            	</div>
-				<div class="mb-3">
-              		<label for="from" class="form-label">from</label>
-              		<input class="form-control" id="from" placeholder="The email address it has been sent from">
-            	</div>
-				<div class="mb-3">
-              		<label for="html_body" class="form-label">html_body</label>
-              		<input class="form-control" id="html_body" placeholder="the HTML version of the email body">
-            	</div>
-				<div class="mb-3">
-              		<label for="subject" class="form-label">subject</label>
-              		<input class="form-control" id="subject" placeholder="The subject of the email">
-            	</div>
-				<div class="mb-3">
-              		<label for="text_body" class="form-label">text_body</label>
-              		<input class="form-control" id="text_body" placeholder="the plain text version of the email body">
-            	</div>
-				<div class="mb-3">
-              		<label for="to" class="form-label">to</label>
-              		<input class="form-control" id="to" placeholder="The email address it is being sent to">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="spamClassify()">Submit</button>
 			</form>

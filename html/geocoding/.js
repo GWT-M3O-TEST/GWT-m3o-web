@@ -15,10 +15,6 @@ window.geocoding = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
-			<th scope="col">address</th>
-			
-			<th scope="col">location</th>
-			
 		  </tr>
 		</thead>
 		<tbody>

@@ -22,39 +22,11 @@
 				<div class="mb-3">
 					<label for="endpoint" class="form-label fs-2 fw-bold">Send</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Send">
-				  	<div id="endpointDesc" class="form-text"><i>Send a request through the tunnel</i></div>
+				  	<div id="endpointDesc" class="form-text"><i></i></div>
 				</div>
 				<div class="mb-3">
               		<label for="token" class="form-label">Token</label>
               		<input class="form-control" id="token">
-            	</div>
-				<div class="mb-3">
-              		<label for="body" class="form-label">body</label>
-              		<input class="form-control" id="body" placeholder="body of the request">
-            	</div>
-				<div class="mb-3">
-              		<label for="headers" class="form-label">headers</label>
-              		<textarea rows="4" class="form-control" id="headers" placeholder="headers to include e.g Content-Type: application/json"></textarea>
-            	</div>
-				<div class="mb-3">
-              		<label for="host" class="form-label">host</label>
-              		<input class="form-control" id="host" placeholder="host to send to e.g www.google.com">
-            	</div>
-				<div class="mb-3">
-              		<label for="method" class="form-label">method</label>
-              		<input class="form-control" id="method" placeholder="method of the request e.g GET, POST, DELETE">
-            	</div>
-				<div class="mb-3">
-              		<label for="params" class="form-label">params</label>
-              		<textarea rows="4" class="form-control" id="params" placeholder="request params to include"></textarea>
-            	</div>
-				<div class="mb-3">
-              		<label for="path" class="form-label">path</label>
-              		<input class="form-control" id="path" placeholder="path to request e.g /news">
-            	</div>
-				<div class="mb-3">
-              		<label for="url" class="form-label">url</label>
-              		<input class="form-control" id="url" placeholder="alternatively specify a full url e.g https://www.google.com/news">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="tunnelSend()">Submit</button>
 			</form>

@@ -5,13 +5,7 @@ window.pingTcp = function () {
 	let token = document.getElementById("token").value;
 	let service = document.getElementById("service").value;
 	let endpoint = document.getElementById("endpoint").value;
-	let address = document.getElementById("address").value;
-	let data = document.getElementById("data").value;
 	let obj = new Object();
-	obj.address = address;
-	
-	obj.data = data;
-	
 	let request = JSON.stringify(obj);
 
 	let m3o = new Client(token);
@@ -21,6 +15,10 @@ window.pingTcp = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">data</th>
+			
+			<th scope="col">status</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

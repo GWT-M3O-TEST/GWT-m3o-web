@@ -22,20 +22,11 @@
 				<div class="mb-3">
 					<label for="endpoint" class="form-label fs-2 fw-bold">CreateChannel</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="CreateChannel">
-				  	<div id="endpointDesc" class="form-text"><i>Create a channel with a given name and description. Channels are created automatically but 
- this allows you to specify a description that's persisted for the lifetime of the channel.</i></div>
+				  	<div id="endpointDesc" class="form-text"><i></i></div>
 				</div>
 				<div class="mb-3">
               		<label for="token" class="form-label">Token</label>
               		<input class="form-control" id="token">
-            	</div>
-				<div class="mb-3">
-              		<label for="description" class="form-label">description</label>
-              		<input class="form-control" id="description" placeholder="description for the channel">
-            	</div>
-				<div class="mb-3">
-              		<label for="name" class="form-label">name</label>
-              		<input class="form-control" id="name" placeholder="name of the channel">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="streamCreateChannel()">Submit</button>
 			</form>

@@ -5,13 +5,7 @@ window.currencyHistory = function () {
 	let token = document.getElementById("token").value;
 	let service = document.getElementById("service").value;
 	let endpoint = document.getElementById("endpoint").value;
-	let code = document.getElementById("code").value;
-	let date = document.getElementById("date").value;
 	let obj = new Object();
-	obj.code = code;
-	
-	obj.date = date;
-	
 	let request = JSON.stringify(obj);
 
 	let m3o = new Client(token);
@@ -21,6 +15,12 @@ window.currencyHistory = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">code</th>
+			
+			<th scope="col">date</th>
+			
+			<th scope="col">rates</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

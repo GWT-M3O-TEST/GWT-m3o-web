@@ -15,6 +15,8 @@ window.notesList = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">notes</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

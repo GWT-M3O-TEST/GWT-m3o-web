@@ -15,6 +15,8 @@ window.commentsList = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">comments</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

@@ -5,16 +5,7 @@ window.thumbnailScreenshot = function () {
 	let token = document.getElementById("token").value;
 	let service = document.getElementById("service").value;
 	let endpoint = document.getElementById("endpoint").value;
-	let height = document.getElementById("height").value;
-	let url = document.getElementById("url").value;
-	let width = document.getElementById("width").value;
 	let obj = new Object();
-	obj.height = height;
-	
-	obj.url = url;
-	
-	obj.width = width;
-	
 	let request = JSON.stringify(obj);
 
 	let m3o = new Client(token);
@@ -24,6 +15,8 @@ window.thumbnailScreenshot = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">imageURL</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

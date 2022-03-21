@@ -22,23 +22,11 @@
 				<div class="mb-3">
 					<label for="endpoint" class="form-label fs-2 fw-bold">Read</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Read">
-				  	<div id="endpointDesc" class="form-text"><i>Read stored events</i></div>
+				  	<div id="endpointDesc" class="form-text"><i></i></div>
 				</div>
 				<div class="mb-3">
               		<label for="token" class="form-label">Token</label>
               		<input class="form-control" id="token">
-            	</div>
-				<div class="mb-3">
-              		<label for="limit" class="form-label">limit</label>
-              		<input class="form-control" id="limit" placeholder="number of events to read; default 25">
-            	</div>
-				<div class="mb-3">
-              		<label for="offset" class="form-label">offset</label>
-              		<input class="form-control" id="offset" placeholder="offset for the events; default 0">
-            	</div>
-				<div class="mb-3">
-              		<label for="topic" class="form-label">topic</label>
-              		<input class="form-control" id="topic" placeholder="topic to read from">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="eventRead()">Submit</button>
 			</form>

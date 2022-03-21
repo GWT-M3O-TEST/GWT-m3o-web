@@ -5,10 +5,7 @@ window.listsDelete = function () {
 	let token = document.getElementById("token").value;
 	let service = document.getElementById("service").value;
 	let endpoint = document.getElementById("endpoint").value;
-	let id = document.getElementById("id").value;
 	let obj = new Object();
-	obj.id = id;
-	
 	let request = JSON.stringify(obj);
 
 	let m3o = new Client(token);
@@ -18,6 +15,8 @@ window.listsDelete = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">list</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

@@ -15,8 +15,6 @@ window.app = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
-			<th scope="col">service</th>
-			
 		  </tr>
 		</thead>
 		<tbody>

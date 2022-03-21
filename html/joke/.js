@@ -15,8 +15,6 @@ window.joke = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
-			<th scope="col">jokes</th>
-			
 		  </tr>
 		</thead>
 		<tbody>

@@ -15,8 +15,6 @@ window.comments = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
-			<th scope="col">comment</th>
-			
 		  </tr>
 		</thead>
 		<tbody>

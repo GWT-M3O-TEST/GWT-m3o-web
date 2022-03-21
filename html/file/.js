@@ -15,8 +15,6 @@ window.file = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
-			<th scope="col">files</th>
-			
 		  </tr>
 		</thead>
 		<tbody>

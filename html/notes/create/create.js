@@ -5,13 +5,7 @@ window.notesCreate = function () {
 	let token = document.getElementById("token").value;
 	let service = document.getElementById("service").value;
 	let endpoint = document.getElementById("endpoint").value;
-	let text = document.getElementById("text").value;
-	let title = document.getElementById("title").value;
 	let obj = new Object();
-	obj.text = text;
-	
-	obj.title = title;
-	
 	let request = JSON.stringify(obj);
 
 	let m3o = new Client(token);
@@ -21,6 +15,8 @@ window.notesCreate = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">note</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

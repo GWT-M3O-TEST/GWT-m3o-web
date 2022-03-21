@@ -15,6 +15,8 @@ window.functionRuntimes = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">runtimes</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

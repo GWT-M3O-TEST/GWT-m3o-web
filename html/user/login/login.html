@@ -22,24 +22,11 @@
 				<div class="mb-3">
 					<label for="endpoint" class="form-label fs-2 fw-bold">Login</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Login">
-				  	<div id="endpointDesc" class="form-text"><i>Login using username or email. The response will return a new session for successful login, 
- 401 in the case of login failure and 500 for any other error</i></div>
+				  	<div id="endpointDesc" class="form-text"><i></i></div>
 				</div>
 				<div class="mb-3">
               		<label for="token" class="form-label">Token</label>
               		<input class="form-control" id="token">
-            	</div>
-				<div class="mb-3">
-              		<label for="email" class="form-label">email</label>
-              		<input class="form-control" id="email" placeholder="The email address of the user">
-            	</div>
-				<div class="mb-3">
-              		<label for="password" class="form-label">password</label>
-              		<input class="form-control" id="password" placeholder="The password of the user">
-            	</div>
-				<div class="mb-3">
-              		<label for="username" class="form-label">username</label>
-              		<input class="form-control" id="username" placeholder="The username of the user">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="userLogin()">Submit</button>
 			</form>

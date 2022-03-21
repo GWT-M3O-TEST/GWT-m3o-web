@@ -15,6 +15,8 @@ window.functionRegions = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">regions</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

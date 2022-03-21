@@ -15,6 +15,8 @@ window.twitterTrends = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">trends</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

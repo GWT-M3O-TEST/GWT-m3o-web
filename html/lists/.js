@@ -15,8 +15,6 @@ window.lists = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
-			<th scope="col">list</th>
-			
 		  </tr>
 		</thead>
 		<tbody>

@@ -15,10 +15,6 @@ window.currency = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
-			<th scope="col">code</th>
-			
-			<th scope="col">rates</th>
-			
 		  </tr>
 		</thead>
 		<tbody>

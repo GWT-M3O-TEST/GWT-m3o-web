@@ -5,13 +5,7 @@ window.fileSave = function () {
 	let token = document.getElementById("token").value;
 	let service = document.getElementById("service").value;
 	let endpoint = document.getElementById("endpoint").value;
-	let file = document.getElementById("file").value;
-	let public = document.getElementById("public").value;
 	let obj = new Object();
-	obj.file = file;
-	
-	obj.public = public;
-	
 	let request = JSON.stringify(obj);
 
 	let m3o = new Client(token);
@@ -21,6 +15,8 @@ window.fileSave = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">url</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

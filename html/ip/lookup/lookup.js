@@ -5,10 +5,7 @@ window.ipLookup = function () {
 	let token = document.getElementById("token").value;
 	let service = document.getElementById("service").value;
 	let endpoint = document.getElementById("endpoint").value;
-	let ip = document.getElementById("ip").value;
 	let obj = new Object();
-	obj.ip = ip;
-	
 	let request = JSON.stringify(obj);
 
 	let m3o = new Client(token);
@@ -18,6 +15,22 @@ window.ipLookup = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">asn</th>
+			
+			<th scope="col">city</th>
+			
+			<th scope="col">continent</th>
+			
+			<th scope="col">country</th>
+			
+			<th scope="col">ip</th>
+			
+			<th scope="col">latitude</th>
+			
+			<th scope="col">longitude</th>
+			
+			<th scope="col">timezone</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

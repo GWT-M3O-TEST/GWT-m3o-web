@@ -5,10 +5,7 @@ window.answerQuestion = function () {
 	let token = document.getElementById("token").value;
 	let service = document.getElementById("service").value;
 	let endpoint = document.getElementById("endpoint").value;
-	let query = document.getElementById("query").value;
 	let obj = new Object();
-	obj.query = query;
-	
 	let request = JSON.stringify(obj);
 
 	let m3o = new Client(token);
@@ -18,6 +15,12 @@ window.answerQuestion = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">answer</th>
+			
+			<th scope="col">image</th>
+			
+			<th scope="col">url</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

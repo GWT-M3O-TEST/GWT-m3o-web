@@ -22,27 +22,11 @@
 				<div class="mb-3">
 					<label for="endpoint" class="form-label fs-2 fw-bold">Eta</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Eta">
-				  	<div id="endpointDesc" class="form-text"><i>Get the eta for a route from origin to destination. The eta is an estimated time based on car routes</i></div>
+				  	<div id="endpointDesc" class="form-text"><i></i></div>
 				</div>
 				<div class="mb-3">
               		<label for="token" class="form-label">Token</label>
               		<input class="form-control" id="token">
-            	</div>
-				<div class="mb-3">
-              		<label for="destination" class="form-label">destination</label>
-              		<textarea rows="4" class="form-control" id="destination" placeholder="The end point for the eta calculation"></textarea>
-            	</div>
-				<div class="mb-3">
-              		<label for="origin" class="form-label">origin</label>
-              		<textarea rows="4" class="form-control" id="origin" placeholder="The starting point for the eta calculation"></textarea>
-            	</div>
-				<div class="mb-3">
-              		<label for="speed" class="form-label">speed</label>
-              		<input class="form-control" id="speed" placeholder="speed in kilometers">
-            	</div>
-				<div class="mb-3">
-              		<label for="type" class="form-label">type</label>
-              		<input class="form-control" id="type" placeholder="type of transport. Only "car" is supported currently.">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="routingEta()">Submit</button>
 			</form>

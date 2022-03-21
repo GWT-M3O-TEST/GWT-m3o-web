@@ -5,13 +5,7 @@ window.streamListMessages = function () {
 	let token = document.getElementById("token").value;
 	let service = document.getElementById("service").value;
 	let endpoint = document.getElementById("endpoint").value;
-	let channel = document.getElementById("channel").value;
-	let limit = document.getElementById("limit").value;
 	let obj = new Object();
-	obj.channel = channel;
-	
-	obj.limit = limit;
-	
 	let request = JSON.stringify(obj);
 
 	let m3o = new Client(token);
@@ -21,6 +15,10 @@ window.streamListMessages = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">channel</th>
+			
+			<th scope="col">messages</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

@@ -22,35 +22,11 @@
 				<div class="mb-3">
 					<label for="endpoint" class="form-label fs-2 fw-bold">Assets</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Assets">
-				  	<div id="endpointDesc" class="form-text"><i>Return a list of assets</i></div>
+				  	<div id="endpointDesc" class="form-text"><i></i></div>
 				</div>
 				<div class="mb-3">
               		<label for="token" class="form-label">Token</label>
               		<input class="form-control" id="token">
-            	</div>
-				<div class="mb-3">
-              		<label for="collection" class="form-label">collection</label>
-              		<input class="form-control" id="collection" placeholder="limit to members of a collection by slug name (case sensitive)">
-            	</div>
-				<div class="mb-3">
-              		<label for="cursor" class="form-label">cursor</label>
-              		<input class="form-control" id="cursor" placeholder="A cursor pointing to the page to retrieve">
-            	</div>
-				<div class="mb-3">
-              		<label for="limit" class="form-label">limit</label>
-              		<input class="form-control" id="limit" placeholder="limit returned assets">
-            	</div>
-				<div class="mb-3">
-              		<label for="offset" class="form-label">offset</label>
-              		<input class="form-control" id="offset" placeholder="DEPRECATED offset for pagination, please use cursor instead">
-            	</div>
-				<div class="mb-3">
-              		<label for="order" class="form-label">order</label>
-              		<input class="form-control" id="order" placeholder="order "asc" or "desc"">
-            	</div>
-				<div class="mb-3">
-              		<label for="order_by" class="form-label">order_by</label>
-              		<input class="form-control" id="order_by" placeholder="order by "sale_date", "sale_count", "sale_price", "total_price"">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="nftAssets()">Submit</button>
 			</form>

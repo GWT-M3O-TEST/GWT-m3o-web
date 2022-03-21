@@ -15,8 +15,6 @@ window.place = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
-			<th scope="col">results</th>
-			
 		  </tr>
 		</thead>
 		<tbody>

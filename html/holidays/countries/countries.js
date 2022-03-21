@@ -15,6 +15,8 @@ window.holidaysCountries = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">countries</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

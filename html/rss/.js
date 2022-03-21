@@ -15,8 +15,6 @@ window.rss = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
-			<th scope="col">entries</th>
-			
 		  </tr>
 		</thead>
 		<tbody>

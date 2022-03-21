@@ -15,8 +15,6 @@ window.user = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
-			<th scope="col">session</th>
-			
 		  </tr>
 		</thead>
 		<tbody>

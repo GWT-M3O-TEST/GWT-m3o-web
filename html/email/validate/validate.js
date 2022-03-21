@@ -5,10 +5,7 @@ window.emailValidate = function () {
 	let token = document.getElementById("token").value;
 	let service = document.getElementById("service").value;
 	let endpoint = document.getElementById("endpoint").value;
-	let address = document.getElementById("address").value;
 	let obj = new Object();
-	obj.address = address;
-	
 	let request = JSON.stringify(obj);
 
 	let m3o = new Client(token);
@@ -18,6 +15,8 @@ window.emailValidate = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">is_valid</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

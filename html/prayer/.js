@@ -15,18 +15,6 @@ window.prayer = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
-			<th scope="col">date</th>
-			
-			<th scope="col">days</th>
-			
-			<th scope="col">latitude</th>
-			
-			<th scope="col">location</th>
-			
-			<th scope="col">longitude</th>
-			
-			<th scope="col">times</th>
-			
 		  </tr>
 		</thead>
 		<tbody>

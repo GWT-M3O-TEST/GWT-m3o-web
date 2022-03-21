@@ -5,10 +5,7 @@ window.urlShorten = function () {
 	let token = document.getElementById("token").value;
 	let service = document.getElementById("service").value;
 	let endpoint = document.getElementById("endpoint").value;
-	let destinationURL = document.getElementById("destinationURL").value;
 	let obj = new Object();
-	obj.destinationURL = destinationURL;
-	
 	let request = JSON.stringify(obj);
 
 	let m3o = new Client(token);
@@ -18,6 +15,8 @@ window.urlShorten = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">shortURL</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

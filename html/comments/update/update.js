@@ -5,10 +5,7 @@ window.commentsUpdate = function () {
 	let token = document.getElementById("token").value;
 	let service = document.getElementById("service").value;
 	let endpoint = document.getElementById("endpoint").value;
-	let comment = document.getElementById("comment").value;
 	let obj = new Object();
-	obj.comment = comment;
-	
 	let request = JSON.stringify(obj);
 
 	let m3o = new Client(token);
@@ -18,6 +15,8 @@ window.commentsUpdate = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">comment</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

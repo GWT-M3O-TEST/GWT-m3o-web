@@ -15,8 +15,6 @@ window.function = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
-			<th scope="col">functions</th>
-			
 		  </tr>
 		</thead>
 		<tbody>

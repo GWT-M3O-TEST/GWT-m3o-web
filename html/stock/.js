@@ -15,12 +15,6 @@ window.stock = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
-			<th scope="col">date</th>
-			
-			<th scope="col">orders</th>
-			
-			<th scope="col">symbol</th>
-			
 		  </tr>
 		</thead>
 		<tbody>

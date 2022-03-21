@@ -5,10 +5,7 @@ window.emailParse = function () {
 	let token = document.getElementById("token").value;
 	let service = document.getElementById("service").value;
 	let endpoint = document.getElementById("endpoint").value;
-	let address = document.getElementById("address").value;
 	let obj = new Object();
-	obj.address = address;
-	
 	let request = JSON.stringify(obj);
 
 	let m3o = new Client(token);
@@ -18,6 +15,10 @@ window.emailParse = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">address</th>
+			
+			<th scope="col">name</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

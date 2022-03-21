@@ -5,13 +5,7 @@ window.appLogs = function () {
 	let token = document.getElementById("token").value;
 	let service = document.getElementById("service").value;
 	let endpoint = document.getElementById("endpoint").value;
-	let logs_type = document.getElementById("logs_type").value;
-	let name = document.getElementById("name").value;
 	let obj = new Object();
-	obj.logs_type = logs_type;
-	
-	obj.name = name;
-	
 	let request = JSON.stringify(obj);
 
 	let m3o = new Client(token);
@@ -21,6 +15,8 @@ window.appLogs = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">logs</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

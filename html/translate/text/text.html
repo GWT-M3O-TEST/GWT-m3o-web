@@ -22,34 +22,11 @@
 				<div class="mb-3">
 					<label for="endpoint" class="form-label fs-2 fw-bold">Text</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Text">
-				  	<div id="endpointDesc" class="form-text"><i>Basic text translation</i></div>
+				  	<div id="endpointDesc" class="form-text"><i></i></div>
 				</div>
 				<div class="mb-3">
               		<label for="token" class="form-label">Token</label>
               		<input class="form-control" id="token">
-            	</div>
-				<div class="mb-3">
-              		<label for="content" class="form-label">content</label>
-              		<input class="form-control" id="content" placeholder="The contents to be translated">
-            	</div>
-				<div class="mb-3">
-              		<label for="format" class="form-label">format</label>
-              		<input class="form-control" id="format" placeholder="The string format, `text` or `html`">
-            	</div>
-				<div class="mb-3">
-              		<label for="model" class="form-label">model</label>
-              		<input class="form-control" id="model" placeholder="The model to use for translation, `nmt` or `base`,
- See https://cloud.google.com/translate/docs/advanced/translating-text-v3#comparing-models for more information">
-            	</div>
-				<div class="mb-3">
-              		<label for="source" class="form-label">source</label>
-              		<input class="form-control" id="source" placeholder="Source language, format in ISO-639-1 codes
- See https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes for more information">
-            	</div>
-				<div class="mb-3">
-              		<label for="target" class="form-label">target</label>
-              		<input class="form-control" id="target" placeholder="Target language, format in ISO-639-1 codes
- See https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes for more information">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="translateText()">Submit</button>
 			</form>

@@ -5,10 +5,7 @@ window.dbCount = function () {
 	let token = document.getElementById("token").value;
 	let service = document.getElementById("service").value;
 	let endpoint = document.getElementById("endpoint").value;
-	let table = document.getElementById("table").value;
 	let obj = new Object();
-	obj.table = table;
-	
 	let request = JSON.stringify(obj);
 
 	let m3o = new Client(token);
@@ -18,6 +15,8 @@ window.dbCount = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">count</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

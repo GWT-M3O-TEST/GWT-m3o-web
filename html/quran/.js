@@ -15,14 +15,6 @@ window.quran = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
-			<th scope="col">chapter</th>
-			
-			<th scope="col">page</th>
-			
-			<th scope="col">total_pages</th>
-			
-			<th scope="col">verses</th>
-			
 		  </tr>
 		</thead>
 		<tbody>

@@ -15,10 +15,6 @@ window.twitter = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
-			<th scope="col">profile</th>
-			
-			<th scope="col">status</th>
-			
 		  </tr>
 		</thead>
 		<tbody>

@@ -22,35 +22,11 @@
 				<div class="mb-3">
 					<label for="endpoint" class="form-label fs-2 fw-bold">Run</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Run">
-				  	<div id="endpointDesc" class="form-text"><i>Run an app from source</i></div>
+				  	<div id="endpointDesc" class="form-text"><i></i></div>
 				</div>
 				<div class="mb-3">
               		<label for="token" class="form-label">Token</label>
               		<input class="form-control" id="token">
-            	</div>
-				<div class="mb-3">
-              		<label for="branch" class="form-label">branch</label>
-              		<input class="form-control" id="branch" placeholder="branch. defaults to master">
-            	</div>
-				<div class="mb-3">
-              		<label for="env_vars" class="form-label">env_vars</label>
-              		<textarea rows="4" class="form-control" id="env_vars" placeholder="associated env vars to pass in"></textarea>
-            	</div>
-				<div class="mb-3">
-              		<label for="name" class="form-label">name</label>
-              		<input class="form-control" id="name" placeholder="name of the app">
-            	</div>
-				<div class="mb-3">
-              		<label for="port" class="form-label">port</label>
-              		<input class="form-control" id="port" placeholder="port to run on">
-            	</div>
-				<div class="mb-3">
-              		<label for="region" class="form-label">region</label>
-              		<input class="form-control" id="region" placeholder="region to run in">
-            	</div>
-				<div class="mb-3">
-              		<label for="repo" class="form-label">repo</label>
-              		<input class="form-control" id="repo" placeholder="source repository">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="appRun()">Submit</button>
 			</form>
