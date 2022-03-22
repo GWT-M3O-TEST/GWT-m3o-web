@@ -15,8 +15,6 @@ window.cryptoSymbols = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
-			<th scope="col">symbols</th>
-			
 		  </tr>
 		</thead>
 		<tbody>

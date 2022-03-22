@@ -15,8 +15,6 @@ window.appList = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
-			<th scope="col">services</th>
-			
 		  </tr>
 		</thead>
 		<tbody>

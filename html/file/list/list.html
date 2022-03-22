@@ -22,22 +22,11 @@
 				<div class="mb-3">
 					<label for="endpoint" class="form-label fs-2 fw-bold">List</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="List">
-				  	<div id="endpointDesc" class="form-text"><i>List files by their project and optionally a path.</i></div>
+				  	<div id="endpointDesc" class="form-text"><i></i></div>
 				</div>
 				<div class="mb-3">
               		<label for="token" class="form-label">Token</label>
               		<input class="form-control" id="token">
-            	</div>
-				<div class="mb-3">
-              		<label for="path" class="form-label">path</label>
-              		<input class="form-control" id="path" placeholder="Defaults to '/', ie. lists all files in a project.
- Supply path to a folder if you want to list
- files inside that folder
- eg. '/docs'">
-            	</div>
-				<div class="mb-3">
-              		<label for="project" class="form-label">project</label>
-              		<input class="form-control" id="project" placeholder="Project, required for listing.">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="fileList()">Submit</button>
 			</form>

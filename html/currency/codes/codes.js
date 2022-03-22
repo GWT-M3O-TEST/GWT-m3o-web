@@ -15,8 +15,6 @@ window.currencyCodes = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
-			<th scope="col">codes</th>
-			
 		  </tr>
 		</thead>
 		<tbody>

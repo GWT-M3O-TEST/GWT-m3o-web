@@ -5,10 +5,7 @@ window.urlList = function () {
 	let token = document.getElementById("token").value;
 	let service = document.getElementById("service").value;
 	let endpoint = document.getElementById("endpoint").value;
-	let shortURL = document.getElementById("shortURL").value;
 	let obj = new Object();
-	obj.shortURL = shortURL;
-	
 	let request = JSON.stringify(obj);
 
 	let m3o = new Client(token);
@@ -18,6 +15,8 @@ window.urlList = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">urlPairs</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

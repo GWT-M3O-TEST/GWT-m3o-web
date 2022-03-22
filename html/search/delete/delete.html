@@ -22,11 +22,19 @@
 				<div class="mb-3">
 					<label for="endpoint" class="form-label fs-2 fw-bold">Delete</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Delete">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Delete a record given its ID</i></div>
 				</div>
 				<div class="mb-3">
               		<label for="token" class="form-label">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="id" class="form-label">id</label>
+              		<input class="form-control" id="id" placeholder="The ID of the record to delete">
+            	</div>
+				<div class="mb-3">
+              		<label for="index" class="form-label">index</label>
+              		<input class="form-control" id="index" placeholder="The index the record belongs to">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="searchDelete()">Submit</button>
 			</form>

@@ -5,7 +5,13 @@ window.searchDelete = function () {
 	let token = document.getElementById("token").value;
 	let service = document.getElementById("service").value;
 	let endpoint = document.getElementById("endpoint").value;
+	let id = document.getElementById("id").value;
+	let index = document.getElementById("index").value;
 	let obj = new Object();
+	obj.id = id;
+	
+	obj.index = index;
+	
 	let request = JSON.stringify(obj);
 
 	let m3o = new Client(token);

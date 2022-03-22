@@ -5,10 +5,7 @@ window.notesUpdate = function () {
 	let token = document.getElementById("token").value;
 	let service = document.getElementById("service").value;
 	let endpoint = document.getElementById("endpoint").value;
-	let note = document.getElementById("note").value;
 	let obj = new Object();
-	obj.note = note;
-	
 	let request = JSON.stringify(obj);
 
 	let m3o = new Client(token);
@@ -18,6 +15,8 @@ window.notesUpdate = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">note</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

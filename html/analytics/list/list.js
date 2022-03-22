@@ -15,8 +15,6 @@ window.analyticsList = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
-			<th scope="col">events</th>
-			
 		  </tr>
 		</thead>
 		<tbody>

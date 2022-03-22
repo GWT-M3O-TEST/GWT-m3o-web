@@ -22,11 +22,15 @@
 				<div class="mb-3">
 					<label for="endpoint" class="form-label fs-2 fw-bold">Chapters</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Chapters">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>List the Chapters (surahs) of the Quran</i></div>
 				</div>
 				<div class="mb-3">
               		<label for="token" class="form-label">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="language" class="form-label">language</label>
+              		<input class="form-control" id="language" placeholder="Specify the language e.g en">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="quranChapters()">Submit</button>
 			</form>

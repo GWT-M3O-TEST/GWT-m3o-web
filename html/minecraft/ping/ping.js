@@ -5,10 +5,7 @@ window.minecraftPing = function () {
 	let token = document.getElementById("token").value;
 	let service = document.getElementById("service").value;
 	let endpoint = document.getElementById("endpoint").value;
-	let address = document.getElementById("address").value;
 	let obj = new Object();
-	obj.address = address;
-	
 	let request = JSON.stringify(obj);
 
 	let m3o = new Client(token);
@@ -18,6 +15,22 @@ window.minecraftPing = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">favicon</th>
+			
+			<th scope="col">latency</th>
+			
+			<th scope="col">max_players</th>
+			
+			<th scope="col">motd</th>
+			
+			<th scope="col">players</th>
+			
+			<th scope="col">protocol</th>
+			
+			<th scope="col">sample</th>
+			
+			<th scope="col">version</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

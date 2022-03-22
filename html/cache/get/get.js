@@ -5,10 +5,7 @@ window.cacheGet = function () {
 	let token = document.getElementById("token").value;
 	let service = document.getElementById("service").value;
 	let endpoint = document.getElementById("endpoint").value;
-	let key = document.getElementById("key").value;
 	let obj = new Object();
-	obj.key = key;
-	
 	let request = JSON.stringify(obj);
 
 	let m3o = new Client(token);
@@ -18,6 +15,12 @@ window.cacheGet = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">key</th>
+			
+			<th scope="col">ttl</th>
+			
+			<th scope="col">value</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

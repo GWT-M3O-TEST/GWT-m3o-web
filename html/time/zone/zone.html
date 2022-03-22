@@ -22,11 +22,15 @@
 				<div class="mb-3">
 					<label for="endpoint" class="form-label fs-2 fw-bold">Zone</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Zone">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Get the timezone info for a specific location</i></div>
 				</div>
 				<div class="mb-3">
               		<label for="token" class="form-label">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="location" class="form-label">location</label>
+              		<input class="form-control" id="location" placeholder="location to lookup e.g postcode, city, ip address">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="timeZone()">Submit</button>
 			</form>

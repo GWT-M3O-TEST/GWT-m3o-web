@@ -22,11 +22,19 @@
 				<div class="mb-3">
 					<label for="endpoint" class="form-label fs-2 fw-bold">Asset</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Asset">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Get a single asset by the contract</i></div>
 				</div>
 				<div class="mb-3">
               		<label for="token" class="form-label">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="contract_address" class="form-label">contract_address</label>
+              		<input class="form-control" id="contract_address" placeholder="">
+            	</div>
+				<div class="mb-3">
+              		<label for="token_id" class="form-label">token_id</label>
+              		<input class="form-control" id="token_id" placeholder="">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="nftAsset()">Submit</button>
 			</form>

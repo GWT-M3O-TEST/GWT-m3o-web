@@ -22,11 +22,51 @@
 				<div class="mb-3">
 					<label for="endpoint" class="form-label fs-2 fw-bold">Deploy</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Deploy">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Deploy a group of functions</i></div>
 				</div>
 				<div class="mb-3">
               		<label for="token" class="form-label">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="branch" class="form-label">branch</label>
+              		<input class="form-control" id="branch" placeholder="branch to deploy. defaults to master">
+            	</div>
+				<div class="mb-3">
+              		<label for="entrypoint" class="form-label">entrypoint</label>
+              		<input class="form-control" id="entrypoint" placeholder="entry point, ie. handler name in the source code 
+ if not provided, defaults to the name parameter">
+            	</div>
+				<div class="mb-3">
+              		<label for="env_vars" class="form-label">env_vars</label>
+              		<textarea rows="4" class="form-control" id="env_vars" placeholder="environment variables to pass in at runtime"></textarea>
+            	</div>
+				<div class="mb-3">
+              		<label for="name" class="form-label">name</label>
+              		<input class="form-control" id="name" placeholder="function name">
+            	</div>
+				<div class="mb-3">
+              		<label for="region" class="form-label">region</label>
+              		<input class="form-control" id="region" placeholder="region to deploy in. defaults to europe-west1">
+            	</div>
+				<div class="mb-3">
+              		<label for="repo" class="form-label">repo</label>
+              		<input class="form-control" id="repo" placeholder="github url for a repo">
+            	</div>
+				<div class="mb-3">
+              		<label for="runtime" class="form-label">runtime</label>
+              		<input class="form-control" id="runtime" placeholder="runtime/lanaguage of the function e.g php74,
+ nodejs6, nodejs8, nodejs10, nodejs12, nodejs14, nodejs16,
+ dotnet3, java11, ruby26, ruby27, go111, go113, go116,
+ python37, python38, python39">
+            	</div>
+				<div class="mb-3">
+              		<label for="source" class="form-label">source</label>
+              		<input class="form-control" id="source" placeholder="inline source code">
+            	</div>
+				<div class="mb-3">
+              		<label for="subfolder" class="form-label">subfolder</label>
+              		<input class="form-control" id="subfolder" placeholder="optional subfolder path">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="functionDeploy()">Submit</button>
 			</form>

@@ -15,8 +15,6 @@ window.idTypes = function () {
 		let res =`<table class="table">
 		<thead>
 		  <tr>
-			<th scope="col">types</th>
-			
 		  </tr>
 		</thead>
 		<tbody>

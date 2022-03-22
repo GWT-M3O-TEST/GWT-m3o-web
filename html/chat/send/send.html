@@ -22,32 +22,11 @@
 				<div class="mb-3">
 					<label for="endpoint" class="form-label fs-2 fw-bold">Send</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Send">
-				  	<div id="endpointDesc" class="form-text"><i>Connect to a chat to receive a stream of messages
- Send a message to a chat</i></div>
+				  	<div id="endpointDesc" class="form-text"><i></i></div>
 				</div>
 				<div class="mb-3">
               		<label for="token" class="form-label">Token</label>
               		<input class="form-control" id="token">
-            	</div>
-				<div class="mb-3">
-              		<label for="client" class="form-label">client</label>
-              		<input class="form-control" id="client" placeholder="a client side id, should be validated by the server to make the request retry safe">
-            	</div>
-				<div class="mb-3">
-              		<label for="room_id" class="form-label">room_id</label>
-              		<input class="form-control" id="room_id" placeholder="id of the chat room the message is being sent to / from">
-            	</div>
-				<div class="mb-3">
-              		<label for="subject" class="form-label">subject</label>
-              		<input class="form-control" id="subject" placeholder="subject of the message">
-            	</div>
-				<div class="mb-3">
-              		<label for="text" class="form-label">text</label>
-              		<input class="form-control" id="text" placeholder="text of the message">
-            	</div>
-				<div class="mb-3">
-              		<label for="user_id" class="form-label">user_id</label>
-              		<input class="form-control" id="user_id" placeholder="id of the user who sent the message">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="chatSend()">Submit</button>
 			</form>
