@@ -20,13 +20,24 @@
 					<input type="hidden" class="form-control" id="service" value="file">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Save</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Save</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Save">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Save a file
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="file" class="form-label fs-5">file</label>
+					<div class="form-text"><i>The file to save</i></div>
+              		<textarea rows="4" class="form-control" id="file"></textarea>
+            	</div>
+				<div class="mb-3">
+              		<label for="public" class="form-label fs-5">public</label>
+					<div class="form-text"><i>Make the file public: true or false</i></div>
+              		<input class="form-control" id="public">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="fileSave()">Submit</button>
 			</form>

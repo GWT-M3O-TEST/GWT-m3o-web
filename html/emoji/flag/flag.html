@@ -20,13 +20,19 @@
 					<input type="hidden" class="form-control" id="service" value="emoji">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Flag</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Flag</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Flag">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Get the flag for a country. Requires country code e.g GB for great britain
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="code" class="form-label fs-5">code</label>
+					<div class="form-text"><i>country code e.g GB</i></div>
+              		<input class="form-control" id="code">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="emojiFlag()">Submit</button>
 			</form>

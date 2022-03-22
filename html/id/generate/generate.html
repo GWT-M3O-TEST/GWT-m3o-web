@@ -20,13 +20,19 @@
 					<input type="hidden" class="form-control" id="service" value="id">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Generate</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Generate</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Generate">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Generate a unique ID. Defaults to uuid.
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="type" class="form-label fs-5">type</label>
+					<div class="form-text"><i>type of id e.g uuid, shortid, snowflake (64 bit), bigflake (128 bit)</i></div>
+              		<input class="form-control" id="type">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="idGenerate()">Submit</button>
 			</form>

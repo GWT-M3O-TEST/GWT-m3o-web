@@ -20,13 +20,19 @@
 					<input type="hidden" class="form-control" id="service" value="user">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">LogoutAll</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">LogoutAll</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="LogoutAll">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Logout of all user's sessions
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="user_id" class="form-label fs-5">user_id</label>
+					<div class="form-text"><i>the user to logout</i></div>
+              		<input class="form-control" id="user_id">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="userLogoutAll()">Submit</button>
 			</form>

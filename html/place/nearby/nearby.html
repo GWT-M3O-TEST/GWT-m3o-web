@@ -20,13 +20,44 @@
 					<input type="hidden" class="form-control" id="service" value="place">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Nearby</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Nearby</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Nearby">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Find places nearby using a location
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="keyword" class="form-label fs-5">keyword</label>
+					<div class="form-text"><i>Keyword to include in the search</i></div>
+              		<input class="form-control" id="keyword">
+            	</div>
+				<div class="mb-3">
+              		<label for="location" class="form-label fs-5">location</label>
+					<div class="form-text"><i>specify the location by lat,lng e.g -33.8670522,-151.1957362</i></div>
+              		<input class="form-control" id="location">
+            	</div>
+				<div class="mb-3">
+              		<label for="name" class="form-label fs-5">name</label>
+					<div class="form-text"><i>Name of the place to search for</i></div>
+              		<input class="form-control" id="name">
+            	</div>
+				<div class="mb-3">
+              		<label for="open_now" class="form-label fs-5">open_now</label>
+					<div class="form-text"><i>Whether the place is open now</i></div>
+              		<input class="form-control" id="open_now">
+            	</div>
+				<div class="mb-3">
+              		<label for="radius" class="form-label fs-5">radius</label>
+					<div class="form-text"><i>radius in meters within which to search</i></div>
+              		<input class="form-control" id="radius">
+            	</div>
+				<div class="mb-3">
+              		<label for="type" class="form-label fs-5">type</label>
+					<div class="form-text"><i>Type of place. https://developers.google.com/maps/documentation/places/web-service/supported_types</i></div>
+              		<input class="form-control" id="type">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="placeNearby()">Submit</button>
 			</form>

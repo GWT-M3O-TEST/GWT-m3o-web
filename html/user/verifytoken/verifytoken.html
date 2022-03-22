@@ -20,12 +20,21 @@
 					<input type="hidden" class="form-control" id="service" value="user">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">VerifyToken</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">VerifyToken</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="VerifyToken">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Check whether the token attached to MagicLink is valid or not.
+Ideally, you need to call this endpoint from your http request
+handler that handles the endpoint which is specified in the
+SendMagicLink request.
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
+              		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="token" class="form-label fs-5">token</label>
+					<div class="form-text"><i></i></div>
               		<input class="form-control" id="token">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="userVerifyToken()">Submit</button>

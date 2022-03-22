@@ -20,21 +20,24 @@
 					<input type="hidden" class="form-control" id="service" value="stock">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">History</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">History</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="History">
-				  	<div id="endpointDesc" class="form-text"><i>Get the historic open-close for a given day</i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Get the historic open-close for a given day
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
             	</div>
 				<div class="mb-3">
-              		<label for="date" class="form-label">date</label>
-              		<input class="form-control" id="date" placeholder="date to retrieve as YYYY-MM-DD">
+              		<label for="date" class="form-label fs-5">date</label>
+					<div class="form-text"><i>date to retrieve as YYYY-MM-DD</i></div>
+              		<input class="form-control" id="date">
             	</div>
 				<div class="mb-3">
-              		<label for="stock" class="form-label">stock</label>
-              		<input class="form-control" id="stock" placeholder="the stock symbol e.g AAPL">
+              		<label for="stock" class="form-label fs-5">stock</label>
+					<div class="form-text"><i>the stock symbol e.g AAPL</i></div>
+              		<input class="form-control" id="stock">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="stockHistory()">Submit</button>
 			</form>

@@ -20,10 +20,20 @@ window.sunnahBooks = function () {
 	let m3o = new Client(token);
 
 	m3o.call(service, endpoint, request, function(response) {
-		resObj = JSON.parse(response);
+		// resObj = JSON.parse(response);
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">books</th>
+			
+			<th scope="col">collection</th>
+			
+			<th scope="col">limit</th>
+			
+			<th scope="col">page</th>
+			
+			<th scope="col">total</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

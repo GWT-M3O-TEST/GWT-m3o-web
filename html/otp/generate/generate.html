@@ -20,13 +20,29 @@
 					<input type="hidden" class="form-control" id="service" value="otp">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Generate</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Generate</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Generate">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Generate an OTP (one time pass) code
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="expiry" class="form-label fs-5">expiry</label>
+					<div class="form-text"><i>expiration in seconds (default: 60)</i></div>
+              		<input class="form-control" id="expiry">
+            	</div>
+				<div class="mb-3">
+              		<label for="id" class="form-label fs-5">id</label>
+					<div class="form-text"><i>unique id, email or user to generate an OTP for</i></div>
+              		<input class="form-control" id="id">
+            	</div>
+				<div class="mb-3">
+              		<label for="size" class="form-label fs-5">size</label>
+					<div class="form-text"><i>number of characters (default: 6)</i></div>
+              		<input class="form-control" id="size">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="otpGenerate()">Submit</button>
 			</form>

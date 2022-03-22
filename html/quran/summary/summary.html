@@ -20,13 +20,24 @@
 					<input type="hidden" class="form-control" id="service" value="quran">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Summary</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Summary</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Summary">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Get a summary for a given chapter (surah)
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="chapter" class="form-label fs-5">chapter</label>
+					<div class="form-text"><i>The chapter id e.g 1</i></div>
+              		<input class="form-control" id="chapter">
+            	</div>
+				<div class="mb-3">
+              		<label for="language" class="form-label fs-5">language</label>
+					<div class="form-text"><i>Specify the language e.g en</i></div>
+              		<input class="form-control" id="language">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="quranSummary()">Submit</button>
 			</form>

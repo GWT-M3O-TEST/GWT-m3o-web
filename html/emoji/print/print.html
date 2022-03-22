@@ -20,13 +20,20 @@
 					<input type="hidden" class="form-control" id="service" value="emoji">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Print</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Print</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Print">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Print text and renders the emojis with aliases e.g
+let's grab a :beer: becomes let's grab a 🍺
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="text" class="form-label fs-5">text</label>
+					<div class="form-text"><i>text including any alias e.g let's grab a :beer:</i></div>
+              		<input class="form-control" id="text">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="emojiPrint()">Submit</button>
 			</form>

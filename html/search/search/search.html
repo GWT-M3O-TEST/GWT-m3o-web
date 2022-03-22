@@ -20,21 +20,24 @@
 					<input type="hidden" class="form-control" id="service" value="search">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Search</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Search</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Search">
-				  	<div id="endpointDesc" class="form-text"><i>Search for records in a given in index</i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Search for records in a given in index
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
             	</div>
 				<div class="mb-3">
-              		<label for="index" class="form-label">index</label>
-              		<input class="form-control" id="index" placeholder="The index the record belongs to">
+              		<label for="index" class="form-label fs-5">index</label>
+					<div class="form-text"><i>The index the record belongs to</i></div>
+              		<input class="form-control" id="index">
             	</div>
 				<div class="mb-3">
-              		<label for="query" class="form-label">query</label>
-              		<input class="form-control" id="query" placeholder="The query. See docs for query language examples">
+              		<label for="query" class="form-label fs-5">query</label>
+					<div class="form-text"><i>The query. See docs for query language examples</i></div>
+              		<input class="form-control" id="query">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="searchSearch()">Submit</button>
 			</form>

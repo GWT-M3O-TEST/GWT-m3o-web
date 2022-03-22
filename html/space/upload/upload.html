@@ -20,21 +20,24 @@
 					<input type="hidden" class="form-control" id="service" value="space">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Upload</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Upload</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Upload">
-				  	<div id="endpointDesc" class="form-text"><i>Upload a large object (> 10MB). Returns a time limited presigned URL to be used for uploading the object</i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Upload a large object (> 10MB). Returns a time limited presigned URL to be used for uploading the object
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
             	</div>
 				<div class="mb-3">
-              		<label for="name" class="form-label">name</label>
-              		<input class="form-control" id="name" placeholder="">
+              		<label for="name" class="form-label fs-5">name</label>
+					<div class="form-text"><i></i></div>
+              		<input class="form-control" id="name">
             	</div>
 				<div class="mb-3">
-              		<label for="visibility" class="form-label">visibility</label>
-              		<input class="form-control" id="visibility" placeholder="is this object public or private">
+              		<label for="visibility" class="form-label fs-5">visibility</label>
+					<div class="form-text"><i>is this object public or private</i></div>
+              		<input class="form-control" id="visibility">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="spaceUpload()">Submit</button>
 			</form>

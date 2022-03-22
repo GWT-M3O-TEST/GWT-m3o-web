@@ -20,21 +20,24 @@
 					<input type="hidden" class="form-control" id="service" value="routing">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Directions</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Directions</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Directions">
-				  	<div id="endpointDesc" class="form-text"><i>Turn by turn directions from a start point to an end point including maneuvers and bearings</i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Turn by turn directions from a start point to an end point including maneuvers and bearings
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
             	</div>
 				<div class="mb-3">
-              		<label for="destination" class="form-label">destination</label>
-              		<textarea rows="4" class="form-control" id="destination" placeholder="The destination of the journey"></textarea>
+              		<label for="destination" class="form-label fs-5">destination</label>
+					<div class="form-text"><i>The destination of the journey</i></div>
+              		<textarea rows="4" class="form-control" id="destination"></textarea>
             	</div>
 				<div class="mb-3">
-              		<label for="origin" class="form-label">origin</label>
-              		<textarea rows="4" class="form-control" id="origin" placeholder="The staring point for the journey"></textarea>
+              		<label for="origin" class="form-label fs-5">origin</label>
+					<div class="form-text"><i>The staring point for the journey</i></div>
+              		<textarea rows="4" class="form-control" id="origin"></textarea>
             	</div>
 				<button type="button" class="btn btn-primary" onclick="routingDirections()">Submit</button>
 			</form>

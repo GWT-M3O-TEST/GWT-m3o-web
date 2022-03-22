@@ -20,13 +20,31 @@
 					<input type="hidden" class="form-control" id="service" value="rss">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Add</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Add</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Add">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Add a new RSS feed with a name, url, and category
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="category" class="form-label fs-5">category</label>
+					<div class="form-text"><i>category to add e.g news</i></div>
+              		<input class="form-control" id="category">
+            	</div>
+				<div class="mb-3">
+              		<label for="name" class="form-label fs-5">name</label>
+					<div class="form-text"><i>rss feed name
+ eg. a16z</i></div>
+              		<input class="form-control" id="name">
+            	</div>
+				<div class="mb-3">
+              		<label for="url" class="form-label fs-5">url</label>
+					<div class="form-text"><i>rss feed url
+ eg. http://a16z.com/feed/</i></div>
+              		<input class="form-control" id="url">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="rssAdd()">Submit</button>
 			</form>

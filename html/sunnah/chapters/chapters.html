@@ -20,13 +20,34 @@
 					<input type="hidden" class="form-control" id="service" value="sunnah">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Chapters</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Chapters</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Chapters">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Get all the chapters of a given book within a collection.
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="book" class="form-label fs-5">book</label>
+					<div class="form-text"><i>number of the book</i></div>
+              		<input class="form-control" id="book">
+            	</div>
+				<div class="mb-3">
+              		<label for="collection" class="form-label fs-5">collection</label>
+					<div class="form-text"><i>name of the collection</i></div>
+              		<input class="form-control" id="collection">
+            	</div>
+				<div class="mb-3">
+              		<label for="limit" class="form-label fs-5">limit</label>
+					<div class="form-text"><i>Limit the number of chapters returned</i></div>
+              		<input class="form-control" id="limit">
+            	</div>
+				<div class="mb-3">
+              		<label for="page" class="form-label fs-5">page</label>
+					<div class="form-text"><i>The page in the pagination</i></div>
+              		<input class="form-control" id="page">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="sunnahChapters()">Submit</button>
 			</form>

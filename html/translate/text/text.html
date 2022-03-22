@@ -20,13 +20,42 @@
 					<input type="hidden" class="form-control" id="service" value="translate">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Text</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Text</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Text">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Basic text translation
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="content" class="form-label fs-5">content</label>
+					<div class="form-text"><i>The contents to be translated</i></div>
+              		<input class="form-control" id="content">
+            	</div>
+				<div class="mb-3">
+              		<label for="format" class="form-label fs-5">format</label>
+					<div class="form-text"><i>The string format, `text` or `html`</i></div>
+              		<input class="form-control" id="format">
+            	</div>
+				<div class="mb-3">
+              		<label for="model" class="form-label fs-5">model</label>
+					<div class="form-text"><i>The model to use for translation, `nmt` or `base`,
+ See https://cloud.google.com/translate/docs/advanced/translating-text-v3#comparing-models for more information</i></div>
+              		<input class="form-control" id="model">
+            	</div>
+				<div class="mb-3">
+              		<label for="source" class="form-label fs-5">source</label>
+					<div class="form-text"><i>Source language, format in ISO-639-1 codes
+ See https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes for more information</i></div>
+              		<input class="form-control" id="source">
+            	</div>
+				<div class="mb-3">
+              		<label for="target" class="form-label fs-5">target</label>
+					<div class="form-text"><i>Target language, format in ISO-639-1 codes
+ See https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes for more information</i></div>
+              		<input class="form-control" id="target">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="translateText()">Submit</button>
 			</form>

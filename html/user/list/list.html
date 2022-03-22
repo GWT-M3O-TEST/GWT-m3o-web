@@ -20,13 +20,25 @@
 					<input type="hidden" class="form-control" id="service" value="user">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">List</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">List</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="List">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>List all users. Returns a paged list of results
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="limit" class="form-label fs-5">limit</label>
+					<div class="form-text"><i>Maximum number of records to return. Default limit is 25.
+ Maximum limit is 1000. Anything higher will return an error.</i></div>
+              		<input class="form-control" id="limit">
+            	</div>
+				<div class="mb-3">
+              		<label for="offset" class="form-label fs-5">offset</label>
+					<div class="form-text"><i></i></div>
+              		<input class="form-control" id="offset">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="userList()">Submit</button>
 			</form>

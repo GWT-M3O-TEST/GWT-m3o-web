@@ -20,13 +20,24 @@
 					<input type="hidden" class="form-control" id="service" value="stream">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">ListMessages</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">ListMessages</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="ListMessages">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>List messages for a given channel
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="channel" class="form-label fs-5">channel</label>
+					<div class="form-text"><i>The channel to subscribe to</i></div>
+              		<input class="form-control" id="channel">
+            	</div>
+				<div class="mb-3">
+              		<label for="limit" class="form-label fs-5">limit</label>
+					<div class="form-text"><i>number of message to return</i></div>
+              		<input class="form-control" id="limit">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="streamListMessages()">Submit</button>
 			</form>

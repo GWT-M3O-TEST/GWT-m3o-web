@@ -20,13 +20,64 @@
 					<input type="hidden" class="form-control" id="service" value="evchargers">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Search</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Search</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Search">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Search by giving a coordinate and a max distance, or bounding box and optional filters
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="box" class="form-label fs-5">box</label>
+					<div class="form-text"><i>Bounding box to search within (top left and bottom right coordinates)</i></div>
+              		<textarea rows="4" class="form-control" id="box"></textarea>
+            	</div>
+				<div class="mb-3">
+              		<label for="connection_types" class="form-label fs-5">connection_types</label>
+					<div class="form-text"><i>IDs of the connection type</i></div>
+              		<input class="form-control" id="connection_types">
+            	</div>
+				<div class="mb-3">
+              		<label for="country_id" class="form-label fs-5">country_id</label>
+					<div class="form-text"><i>Country ID</i></div>
+              		<input class="form-control" id="country_id">
+            	</div>
+				<div class="mb-3">
+              		<label for="distance" class="form-label fs-5">distance</label>
+					<div class="form-text"><i>Search distance from point in metres, defaults to 5000m</i></div>
+              		<input class="form-control" id="distance">
+            	</div>
+				<div class="mb-3">
+              		<label for="levels" class="form-label fs-5">levels</label>
+					<div class="form-text"><i>Supported charging levels</i></div>
+              		<input class="form-control" id="levels">
+            	</div>
+				<div class="mb-3">
+              		<label for="location" class="form-label fs-5">location</label>
+					<div class="form-text"><i>Coordinates from which to begin search</i></div>
+              		<textarea rows="4" class="form-control" id="location"></textarea>
+            	</div>
+				<div class="mb-3">
+              		<label for="max_results" class="form-label fs-5">max_results</label>
+					<div class="form-text"><i>Maximum number of results to return, defaults to 100</i></div>
+              		<input class="form-control" id="max_results">
+            	</div>
+				<div class="mb-3">
+              		<label for="min_power" class="form-label fs-5">min_power</label>
+					<div class="form-text"><i>Minimum power in KW. Note: data not available for many chargers</i></div>
+              		<input class="form-control" id="min_power">
+            	</div>
+				<div class="mb-3">
+              		<label for="operators" class="form-label fs-5">operators</label>
+					<div class="form-text"><i>IDs of the the EV charger operator</i></div>
+              		<input class="form-control" id="operators">
+            	</div>
+				<div class="mb-3">
+              		<label for="usage_types" class="form-label fs-5">usage_types</label>
+					<div class="form-text"><i>Usage of the charge point (is it public, membership required, etc)</i></div>
+              		<input class="form-control" id="usage_types">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="evchargersSearch()">Submit</button>
 			</form>

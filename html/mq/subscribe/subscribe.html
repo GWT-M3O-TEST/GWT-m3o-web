@@ -20,13 +20,19 @@
 					<input type="hidden" class="form-control" id="service" value="mq">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Subscribe</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Subscribe</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Subscribe">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Subscribe to messages for a given topic.
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="topic" class="form-label fs-5">topic</label>
+					<div class="form-text"><i>The topic to subscribe to</i></div>
+              		<input class="form-control" id="topic">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="mqSubscribe()">Submit</button>
 			</form>

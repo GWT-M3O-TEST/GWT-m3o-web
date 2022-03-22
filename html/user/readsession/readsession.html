@@ -20,17 +20,19 @@
 					<input type="hidden" class="form-control" id="service" value="user">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">ReadSession</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">ReadSession</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="ReadSession">
-				  	<div id="endpointDesc" class="form-text"><i>Read a session by the session id. In the event it has expired or is not found and error is returned.</i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Read a session by the session id. In the event it has expired or is not found and error is returned.
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
             	</div>
 				<div class="mb-3">
-              		<label for="session_id" class="form-label">session_id</label>
-              		<input class="form-control" id="session_id" placeholder="The unique session id">
+              		<label for="session_id" class="form-label fs-5">session_id</label>
+					<div class="form-text"><i>The unique session id</i></div>
+              		<input class="form-control" id="session_id">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="userReadSession()">Submit</button>
 			</form>

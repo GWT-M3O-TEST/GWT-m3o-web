@@ -20,40 +20,47 @@
 					<input type="hidden" class="form-control" id="service" value="user">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">SendMagicLink</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">SendMagicLink</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="SendMagicLink">
-				  	<div id="endpointDesc" class="form-text"><i>Login using email only - Passwordless</i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Login using email only - Passwordless
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
             	</div>
 				<div class="mb-3">
-              		<label for="address" class="form-label">address</label>
-              		<input class="form-control" id="address" placeholder="Your web site address, example www.example.com or user.example.com">
+              		<label for="address" class="form-label fs-5">address</label>
+					<div class="form-text"><i>Your web site address, example www.example.com or user.example.com</i></div>
+              		<input class="form-control" id="address">
             	</div>
 				<div class="mb-3">
-              		<label for="email" class="form-label">email</label>
-              		<input class="form-control" id="email" placeholder="the email address of the user">
+              		<label for="email" class="form-label fs-5">email</label>
+					<div class="form-text"><i>the email address of the user</i></div>
+              		<input class="form-control" id="email">
             	</div>
 				<div class="mb-3">
-              		<label for="endpoint" class="form-label">endpoint</label>
-              		<input class="form-control" id="endpoint" placeholder="Endpoint name where your http request handler handles MagicLink by 
+              		<label for="endpoint" class="form-label fs-5">endpoint</label>
+					<div class="form-text"><i>Endpoint name where your http request handler handles MagicLink by 
  calling M3O VerifyToken endpoint. You can return as a result a success, 
- failed or redirect to another page.">
+ failed or redirect to another page.</i></div>
+              		<input class="form-control" id="endpoint">
             	</div>
 				<div class="mb-3">
-              		<label for="from_name" class="form-label">from_name</label>
-              		<input class="form-control" id="from_name" placeholder="Display name of the sender for the email. Note: the email address will still be 'support@m3o.com'">
+              		<label for="from_name" class="form-label fs-5">from_name</label>
+					<div class="form-text"><i>Display name of the sender for the email. Note: the email address will still be 'support@m3o.com'</i></div>
+              		<input class="form-control" id="from_name">
             	</div>
 				<div class="mb-3">
-              		<label for="subject" class="form-label">subject</label>
-              		<input class="form-control" id="subject" placeholder="">
+              		<label for="subject" class="form-label fs-5">subject</label>
+					<div class="form-text"><i></i></div>
+              		<input class="form-control" id="subject">
             	</div>
 				<div class="mb-3">
-              		<label for="text_content" class="form-label">text_content</label>
-              		<input class="form-control" id="text_content" placeholder="Text content of the email. Don't forget to include the string '$micro_verification_link' which will be replaced by the real verification link
- HTML emails are not available currently.">
+              		<label for="text_content" class="form-label fs-5">text_content</label>
+					<div class="form-text"><i>Text content of the email. Don't forget to include the string '$micro_verification_link' which will be replaced by the real verification link
+ HTML emails are not available currently.</i></div>
+              		<input class="form-control" id="text_content">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="userSendMagicLink()">Submit</button>
 			</form>

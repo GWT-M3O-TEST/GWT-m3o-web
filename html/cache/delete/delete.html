@@ -20,13 +20,19 @@
 					<input type="hidden" class="form-control" id="service" value="cache">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Delete</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Delete</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Delete">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Delete a value from the cache. If key not found a success response is returned.
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="key" class="form-label fs-5">key</label>
+					<div class="form-text"><i>The key to delete</i></div>
+              		<input class="form-control" id="key">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="cacheDelete()">Submit</button>
 			</form>

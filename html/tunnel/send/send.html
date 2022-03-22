@@ -20,13 +20,49 @@
 					<input type="hidden" class="form-control" id="service" value="tunnel">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Send</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Send</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Send">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Send a request through the tunnel
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="body" class="form-label fs-5">body</label>
+					<div class="form-text"><i>body of the request</i></div>
+              		<input class="form-control" id="body">
+            	</div>
+				<div class="mb-3">
+              		<label for="headers" class="form-label fs-5">headers</label>
+					<div class="form-text"><i>headers to include e.g Content-Type: application/json</i></div>
+              		<textarea rows="4" class="form-control" id="headers"></textarea>
+            	</div>
+				<div class="mb-3">
+              		<label for="host" class="form-label fs-5">host</label>
+					<div class="form-text"><i>host to send to e.g www.google.com</i></div>
+              		<input class="form-control" id="host">
+            	</div>
+				<div class="mb-3">
+              		<label for="method" class="form-label fs-5">method</label>
+					<div class="form-text"><i>method of the request e.g GET, POST, DELETE</i></div>
+              		<input class="form-control" id="method">
+            	</div>
+				<div class="mb-3">
+              		<label for="params" class="form-label fs-5">params</label>
+					<div class="form-text"><i>request params to include</i></div>
+              		<textarea rows="4" class="form-control" id="params"></textarea>
+            	</div>
+				<div class="mb-3">
+              		<label for="path" class="form-label fs-5">path</label>
+					<div class="form-text"><i>path to request e.g /news</i></div>
+              		<input class="form-control" id="path">
+            	</div>
+				<div class="mb-3">
+              		<label for="url" class="form-label fs-5">url</label>
+					<div class="form-text"><i>alternatively specify a full url e.g https://www.google.com/news</i></div>
+              		<input class="form-control" id="url">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="tunnelSend()">Submit</button>
 			</form>

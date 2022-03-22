@@ -20,13 +20,24 @@
 					<input type="hidden" class="form-control" id="service" value="routing">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Route</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Route</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Route">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Retrieve a route as a simple list of gps points along with total distance and estimated duration
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="destination" class="form-label fs-5">destination</label>
+					<div class="form-text"><i>Point of destination for the trip</i></div>
+              		<textarea rows="4" class="form-control" id="destination"></textarea>
+            	</div>
+				<div class="mb-3">
+              		<label for="origin" class="form-label fs-5">origin</label>
+					<div class="form-text"><i>Point of origin for the trip</i></div>
+              		<textarea rows="4" class="form-control" id="origin"></textarea>
             	</div>
 				<button type="button" class="btn btn-primary" onclick="routingRoute()">Submit</button>
 			</form>

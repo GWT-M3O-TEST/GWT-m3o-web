@@ -20,13 +20,39 @@
 					<input type="hidden" class="form-control" id="service" value="memegen">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Generate</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Generate</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Generate">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Generate a meme using a template
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="bottom_text" class="form-label fs-5">bottom_text</label>
+					<div class="form-text"><i>bottom text</i></div>
+              		<input class="form-control" id="bottom_text">
+            	</div>
+				<div class="mb-3">
+              		<label for="font" class="form-label fs-5">font</label>
+					<div class="form-text"><i>font: arial or impact</i></div>
+              		<input class="form-control" id="font">
+            	</div>
+				<div class="mb-3">
+              		<label for="id" class="form-label fs-5">id</label>
+					<div class="form-text"><i>the template id to use</i></div>
+              		<input class="form-control" id="id">
+            	</div>
+				<div class="mb-3">
+              		<label for="max_font_size" class="form-label fs-5">max_font_size</label>
+					<div class="form-text"><i>font size; defaults to 50px</i></div>
+              		<input class="form-control" id="max_font_size">
+            	</div>
+				<div class="mb-3">
+              		<label for="top_text" class="form-label fs-5">top_text</label>
+					<div class="form-text"><i>top text</i></div>
+              		<input class="form-control" id="top_text">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="memegenGenerate()">Submit</button>
 			</form>

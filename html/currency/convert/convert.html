@@ -20,13 +20,29 @@
 					<input type="hidden" class="form-control" id="service" value="currency">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Convert</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Convert</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Convert">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Convert returns the currency conversion rate between two pairs e.g USD/GBP
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="amount" class="form-label fs-5">amount</label>
+					<div class="form-text"><i>optional amount to convert e.g 10.0</i></div>
+              		<input class="form-control" id="amount">
+            	</div>
+				<div class="mb-3">
+              		<label for="from" class="form-label fs-5">from</label>
+					<div class="form-text"><i>base code to convert from e.g USD</i></div>
+              		<input class="form-control" id="from">
+            	</div>
+				<div class="mb-3">
+              		<label for="to" class="form-label fs-5">to</label>
+					<div class="form-text"><i>target code to convert to e.g GBP</i></div>
+              		<input class="form-control" id="to">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="currencyConvert()">Submit</button>
 			</form>

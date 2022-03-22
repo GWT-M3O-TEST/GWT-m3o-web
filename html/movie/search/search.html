@@ -20,13 +20,44 @@
 					<input type="hidden" class="form-control" id="service" value="movie">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Search</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Search</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Search">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Search for movies by simple text search
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="language" class="form-label fs-5">language</label>
+					<div class="form-text"><i>a ISO 639-1 value to display translated data</i></div>
+              		<input class="form-control" id="language">
+            	</div>
+				<div class="mb-3">
+              		<label for="page" class="form-label fs-5">page</label>
+					<div class="form-text"><i>page to query</i></div>
+              		<input class="form-control" id="page">
+            	</div>
+				<div class="mb-3">
+              		<label for="primary_release_year" class="form-label fs-5">primary_release_year</label>
+					<div class="form-text"><i>year of release</i></div>
+              		<input class="form-control" id="primary_release_year">
+            	</div>
+				<div class="mb-3">
+              		<label for="query" class="form-label fs-5">query</label>
+					<div class="form-text"><i>a text query to search</i></div>
+              		<input class="form-control" id="query">
+            	</div>
+				<div class="mb-3">
+              		<label for="region" class="form-label fs-5">region</label>
+					<div class="form-text"><i>a ISO 3166-1 code to filter release dates.</i></div>
+              		<input class="form-control" id="region">
+            	</div>
+				<div class="mb-3">
+              		<label for="year" class="form-label fs-5">year</label>
+					<div class="form-text"><i>year of making</i></div>
+              		<input class="form-control" id="year">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="movieSearch()">Submit</button>
 			</form>

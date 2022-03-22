@@ -14,10 +14,22 @@ window.cryptoQuote = function () {
 	let m3o = new Client(token);
 
 	m3o.call(service, endpoint, request, function(response) {
-		resObj = JSON.parse(response);
+		// resObj = JSON.parse(response);
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">ask_price</th>
+			
+			<th scope="col">ask_size</th>
+			
+			<th scope="col">bid_price</th>
+			
+			<th scope="col">bid_size</th>
+			
+			<th scope="col">symbol</th>
+			
+			<th scope="col">timestamp</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

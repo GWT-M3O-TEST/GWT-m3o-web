@@ -20,13 +20,60 @@
 					<input type="hidden" class="form-control" id="service" value="image">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Resize</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Resize</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Resize">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Resize an image on the fly without storing it (by sending and receiving a base64 encoded image), or resize and upload depending on parameters.
+If one of width or height is 0, the image aspect ratio is preserved.
+Optional cropping.
+To use the file parameter you need to send the request as a multipart/form-data rather than the usual application/json
+with each parameter as a form field.
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="base64" class="form-label fs-5">base64</label>
+					<div class="form-text"><i>base64 encoded image to resize,</i></div>
+              		<input class="form-control" id="base64">
+            	</div>
+				<div class="mb-3">
+              		<label for="cropOptions" class="form-label fs-5">cropOptions</label>
+					<div class="form-text"><i>optional crop options
+ if provided, after resize, the image
+ will be cropped</i></div>
+              		<textarea rows="4" class="form-control" id="cropOptions"></textarea>
+            	</div>
+				<div class="mb-3">
+              		<label for="file" class="form-label fs-5">file</label>
+					<div class="form-text"><i>The image file to resize</i></div>
+              		<input class="form-control" id="file">
+            	</div>
+				<div class="mb-3">
+              		<label for="height" class="form-label fs-5">height</label>
+					<div class="form-text"><i></i></div>
+              		<input class="form-control" id="height">
+            	</div>
+				<div class="mb-3">
+              		<label for="name" class="form-label fs-5">name</label>
+					<div class="form-text"><i>output name of the image including extension, ie. "cat.png"</i></div>
+              		<input class="form-control" id="name">
+            	</div>
+				<div class="mb-3">
+              		<label for="outputURL" class="form-label fs-5">outputURL</label>
+					<div class="form-text"><i>make output a URL and not a base64 response</i></div>
+              		<input class="form-control" id="outputURL">
+            	</div>
+				<div class="mb-3">
+              		<label for="url" class="form-label fs-5">url</label>
+					<div class="form-text"><i>url of the image to resize</i></div>
+              		<input class="form-control" id="url">
+            	</div>
+				<div class="mb-3">
+              		<label for="width" class="form-label fs-5">width</label>
+					<div class="form-text"><i></i></div>
+              		<input class="form-control" id="width">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="imageResize()">Submit</button>
 			</form>

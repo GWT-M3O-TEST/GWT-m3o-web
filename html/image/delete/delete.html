@@ -20,13 +20,19 @@
 					<input type="hidden" class="form-control" id="service" value="image">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Delete</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Delete</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Delete">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Delete an image previously uploaded.
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="url" class="form-label fs-5">url</label>
+					<div class="form-text"><i>url of the image to delete e.g. https://cdn.m3ocontent.com/micro/images/micro/41e23b39-48dd-42b6-9738-79a313414bb8/cat.jpeg</i></div>
+              		<input class="form-control" id="url">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="imageDelete()">Submit</button>
 			</form>

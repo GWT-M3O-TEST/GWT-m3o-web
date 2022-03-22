@@ -20,21 +20,24 @@
 					<input type="hidden" class="form-control" id="service" value="db">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">RenameTable</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">RenameTable</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="RenameTable">
-				  	<div id="endpointDesc" class="form-text"><i>Rename a table</i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Rename a table
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
             	</div>
 				<div class="mb-3">
-              		<label for="from" class="form-label">from</label>
-              		<input class="form-control" id="from" placeholder="current table name">
+              		<label for="from" class="form-label fs-5">from</label>
+					<div class="form-text"><i>current table name</i></div>
+              		<input class="form-control" id="from">
             	</div>
 				<div class="mb-3">
-              		<label for="to" class="form-label">to</label>
-              		<input class="form-control" id="to" placeholder="new table name">
+              		<label for="to" class="form-label fs-5">to</label>
+					<div class="form-text"><i>new table name</i></div>
+              		<input class="form-control" id="to">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="dbRenameTable()">Submit</button>
 			</form>

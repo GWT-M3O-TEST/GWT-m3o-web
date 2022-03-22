@@ -20,13 +20,29 @@
 					<input type="hidden" class="form-control" id="service" value="search">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Index</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Index</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Index">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Index a record i.e. insert a document to search for.
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="data" class="form-label fs-5">data</label>
+					<div class="form-text"><i>The data to index</i></div>
+              		<textarea rows="4" class="form-control" id="data"></textarea>
+            	</div>
+				<div class="mb-3">
+              		<label for="id" class="form-label fs-5">id</label>
+					<div class="form-text"><i>Optional ID for the record</i></div>
+              		<input class="form-control" id="id">
+            	</div>
+				<div class="mb-3">
+              		<label for="index" class="form-label fs-5">index</label>
+					<div class="form-text"><i>The index this record belongs to</i></div>
+              		<input class="form-control" id="index">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="searchIndex()">Submit</button>
 			</form>

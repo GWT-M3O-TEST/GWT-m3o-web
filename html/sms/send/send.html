@@ -20,13 +20,29 @@
 					<input type="hidden" class="form-control" id="service" value="sms">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Send</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Send</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Send">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Send an SMS.
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="from" class="form-label fs-5">from</label>
+					<div class="form-text"><i>who is the message from? The message will be suffixed with "Sent from <from>"</i></div>
+              		<input class="form-control" id="from">
+            	</div>
+				<div class="mb-3">
+              		<label for="message" class="form-label fs-5">message</label>
+					<div class="form-text"><i>the main body of the message to send</i></div>
+              		<input class="form-control" id="message">
+            	</div>
+				<div class="mb-3">
+              		<label for="to" class="form-label fs-5">to</label>
+					<div class="form-text"><i>the destination phone number including the international dialling code (e.g. +44)</i></div>
+              		<input class="form-control" id="to">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="smsSend()">Submit</button>
 			</form>

@@ -20,13 +20,29 @@
 					<input type="hidden" class="form-control" id="service" value="news">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Headlines</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Headlines</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Headlines">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Get the latest news headlines
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="date" class="form-label fs-5">date</label>
+					<div class="form-text"><i>date published on in YYYY-MM-DD format</i></div>
+              		<input class="form-control" id="date">
+            	</div>
+				<div class="mb-3">
+              		<label for="language" class="form-label fs-5">language</label>
+					<div class="form-text"><i>comma separated list of languages to retrieve in e.g en,es</i></div>
+              		<input class="form-control" id="language">
+            	</div>
+				<div class="mb-3">
+              		<label for="locale" class="form-label fs-5">locale</label>
+					<div class="form-text"><i>comma separated list of countries to include e.g us,ca</i></div>
+              		<input class="form-control" id="locale">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="newsHeadlines()">Submit</button>
 			</form>

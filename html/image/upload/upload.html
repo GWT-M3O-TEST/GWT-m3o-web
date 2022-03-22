@@ -20,13 +20,37 @@
 					<input type="hidden" class="form-control" id="service" value="image">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Upload</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Upload</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Upload">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Upload an image by either sending a base64 encoded image to this endpoint or a URL.
+To resize an image before uploading, see the Resize endpoint.
+To use the file parameter you need to send the request as a multipart/form-data rather than the usual application/json
+with each parameter as a form field.
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="base64" class="form-label fs-5">base64</label>
+					<div class="form-text"><i>Base64 encoded image to upload,</i></div>
+              		<input class="form-control" id="base64">
+            	</div>
+				<div class="mb-3">
+              		<label for="file" class="form-label fs-5">file</label>
+					<div class="form-text"><i>The image file to upload</i></div>
+              		<input class="form-control" id="file">
+            	</div>
+				<div class="mb-3">
+              		<label for="name" class="form-label fs-5">name</label>
+					<div class="form-text"><i>Output name of the image including extension, ie. "cat.png"</i></div>
+              		<input class="form-control" id="name">
+            	</div>
+				<div class="mb-3">
+              		<label for="url" class="form-label fs-5">url</label>
+					<div class="form-text"><i>URL of the image to upload</i></div>
+              		<input class="form-control" id="url">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="imageUpload()">Submit</button>
 			</form>

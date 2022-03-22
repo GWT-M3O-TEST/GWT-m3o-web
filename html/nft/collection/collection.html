@@ -20,17 +20,19 @@
 					<input type="hidden" class="form-control" id="service" value="nft">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Collection</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Collection</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Collection">
-				  	<div id="endpointDesc" class="form-text"><i>Get a collection by its slug</i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Get a collection by its slug
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
             	</div>
 				<div class="mb-3">
-              		<label for="slug" class="form-label">slug</label>
-              		<input class="form-control" id="slug" placeholder="">
+              		<label for="slug" class="form-label fs-5">slug</label>
+					<div class="form-text"><i></i></div>
+              		<input class="form-control" id="slug">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="nftCollection()">Submit</button>
 			</form>

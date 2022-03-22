@@ -20,13 +20,29 @@
 					<input type="hidden" class="form-control" id="service" value="event">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Read</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Read</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Read">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Read stored events
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="limit" class="form-label fs-5">limit</label>
+					<div class="form-text"><i>number of events to read; default 25</i></div>
+              		<input class="form-control" id="limit">
+            	</div>
+				<div class="mb-3">
+              		<label for="offset" class="form-label fs-5">offset</label>
+					<div class="form-text"><i>offset for the events; default 0</i></div>
+              		<input class="form-control" id="offset">
+            	</div>
+				<div class="mb-3">
+              		<label for="topic" class="form-label fs-5">topic</label>
+					<div class="form-text"><i>topic to read from</i></div>
+              		<input class="form-control" id="topic">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="eventRead()">Submit</button>
 			</form>

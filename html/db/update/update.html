@@ -20,13 +20,29 @@
 					<input type="hidden" class="form-control" id="service" value="db">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Update</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Update</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Update">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Update a record in the database. Include an "id" in the record to update.
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="id" class="form-label fs-5">id</label>
+					<div class="form-text"><i>The id of the record. If not specified it is inferred from the 'id' field of the record</i></div>
+              		<input class="form-control" id="id">
+            	</div>
+				<div class="mb-3">
+              		<label for="record" class="form-label fs-5">record</label>
+					<div class="form-text"><i>record, JSON object</i></div>
+              		<textarea rows="4" class="form-control" id="record"></textarea>
+            	</div>
+				<div class="mb-3">
+              		<label for="table" class="form-label fs-5">table</label>
+					<div class="form-text"><i>Optional table name. Defaults to 'default'</i></div>
+              		<input class="form-control" id="table">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="dbUpdate()">Submit</button>
 			</form>

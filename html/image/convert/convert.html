@@ -20,36 +20,42 @@
 					<input type="hidden" class="form-control" id="service" value="image">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Convert</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Convert</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Convert">
 				  	<div id="endpointDesc" class="form-text"><i>Convert an image from one format (jpeg, png etc.) to an other either on the fly (from base64 to base64),
- or by uploading the conversion result.
- To use the file parameter you need to send the request as a multipart/form-data rather than the usual application/json
- with each parameter as a form field.</i></div>
+or by uploading the conversion result.
+To use the file parameter you need to send the request as a multipart/form-data rather than the usual application/json
+with each parameter as a form field.
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
             	</div>
 				<div class="mb-3">
-              		<label for="base64" class="form-label">base64</label>
-              		<input class="form-control" id="base64" placeholder="base64 encoded image to resize,">
+              		<label for="base64" class="form-label fs-5">base64</label>
+					<div class="form-text"><i>base64 encoded image to resize,</i></div>
+              		<input class="form-control" id="base64">
             	</div>
 				<div class="mb-3">
-              		<label for="file" class="form-label">file</label>
-              		<input class="form-control" id="file" placeholder="The image file to convert">
+              		<label for="file" class="form-label fs-5">file</label>
+					<div class="form-text"><i>The image file to convert</i></div>
+              		<input class="form-control" id="file">
             	</div>
 				<div class="mb-3">
-              		<label for="name" class="form-label">name</label>
-              		<input class="form-control" id="name" placeholder="output name of the image including extension, ie. "cat.png"">
+              		<label for="name" class="form-label fs-5">name</label>
+					<div class="form-text"><i>output name of the image including extension, ie. "cat.png"</i></div>
+              		<input class="form-control" id="name">
             	</div>
 				<div class="mb-3">
-              		<label for="outputURL" class="form-label">outputURL</label>
-              		<input class="form-control" id="outputURL" placeholder="make output a URL and not a base64 response">
+              		<label for="outputURL" class="form-label fs-5">outputURL</label>
+					<div class="form-text"><i>make output a URL and not a base64 response</i></div>
+              		<input class="form-control" id="outputURL">
             	</div>
 				<div class="mb-3">
-              		<label for="url" class="form-label">url</label>
-              		<input class="form-control" id="url" placeholder="url of the image to resize">
+              		<label for="url" class="form-label fs-5">url</label>
+					<div class="form-text"><i>url of the image to resize</i></div>
+              		<input class="form-control" id="url">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="imageConvert()">Submit</button>
 			</form>

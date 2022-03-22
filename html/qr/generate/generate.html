@@ -20,13 +20,24 @@
 					<input type="hidden" class="form-control" id="service" value="qr">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Generate</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Generate</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Generate">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Generate a QR code with a specific text and size
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="size" class="form-label fs-5">size</label>
+					<div class="form-text"><i>the size (height and width) in pixels of the generated QR code. Defaults to 256</i></div>
+              		<input class="form-control" id="size">
+            	</div>
+				<div class="mb-3">
+              		<label for="text" class="form-label fs-5">text</label>
+					<div class="form-text"><i>the text to encode as a QR code (URL, phone number, email, etc)</i></div>
+              		<input class="form-control" id="text">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="qrGenerate()">Submit</button>
 			</form>

@@ -20,13 +20,44 @@
 					<input type="hidden" class="form-control" id="service" value="user">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">SendVerificationEmail</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">SendVerificationEmail</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="SendVerificationEmail">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Send a verification email to a user.
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="email" class="form-label fs-5">email</label>
+					<div class="form-text"><i>email address to send the verification code</i></div>
+              		<input class="form-control" id="email">
+            	</div>
+				<div class="mb-3">
+              		<label for="failure_redirect_url" class="form-label fs-5">failure_redirect_url</label>
+					<div class="form-text"><i>The url to redirect to incase of failure</i></div>
+              		<input class="form-control" id="failure_redirect_url">
+            	</div>
+				<div class="mb-3">
+              		<label for="from_name" class="form-label fs-5">from_name</label>
+					<div class="form-text"><i>Display name of the sender for the email. Note: the email address will still be 'noreply@email.m3ocontent.com'</i></div>
+              		<input class="form-control" id="from_name">
+            	</div>
+				<div class="mb-3">
+              		<label for="redirect_url" class="form-label fs-5">redirect_url</label>
+					<div class="form-text"><i>The url to redirect to after successful verification</i></div>
+              		<input class="form-control" id="redirect_url">
+            	</div>
+				<div class="mb-3">
+              		<label for="subject" class="form-label fs-5">subject</label>
+					<div class="form-text"><i>subject of the email</i></div>
+              		<input class="form-control" id="subject">
+            	</div>
+				<div class="mb-3">
+              		<label for="text_content" class="form-label fs-5">text_content</label>
+					<div class="form-text"><i>Text content of the email. Include '$micro_verification_link' which will be replaced by a verification link</i></div>
+              		<input class="form-control" id="text_content">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="userSendVerificationEmail()">Submit</button>
 			</form>

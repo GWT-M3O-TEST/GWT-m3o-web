@@ -20,17 +20,19 @@
 					<input type="hidden" class="form-control" id="service" value="twitter">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">User</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">User</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="User">
-				  	<div id="endpointDesc" class="form-text"><i>Get a user's twitter profile</i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Get a user's twitter profile
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
             	</div>
 				<div class="mb-3">
-              		<label for="username" class="form-label">username</label>
-              		<input class="form-control" id="username" placeholder="the username to lookup">
+              		<label for="username" class="form-label fs-5">username</label>
+					<div class="form-text"><i>the username to lookup</i></div>
+              		<input class="form-control" id="username">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="twitterUser()">Submit</button>
 			</form>

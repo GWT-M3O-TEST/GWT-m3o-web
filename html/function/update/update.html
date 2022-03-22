@@ -20,21 +20,24 @@
 					<input type="hidden" class="form-control" id="service" value="function">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Update</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Update</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Update">
-				  	<div id="endpointDesc" class="form-text"><i>Update a function. Downloads the source, builds and redeploys</i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Update a function. Downloads the source, builds and redeploys
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
             	</div>
 				<div class="mb-3">
-              		<label for="name" class="form-label">name</label>
-              		<input class="form-control" id="name" placeholder="function name">
+              		<label for="name" class="form-label fs-5">name</label>
+					<div class="form-text"><i>function name</i></div>
+              		<input class="form-control" id="name">
             	</div>
 				<div class="mb-3">
-              		<label for="source" class="form-label">source</label>
-              		<input class="form-control" id="source" placeholder="inline source code">
+              		<label for="source" class="form-label fs-5">source</label>
+					<div class="form-text"><i>inline source code</i></div>
+              		<input class="form-control" id="source">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="functionUpdate()">Submit</button>
 			</form>

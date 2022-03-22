@@ -20,13 +20,24 @@
 					<input type="hidden" class="form-control" id="service" value="mq">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Publish</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Publish</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Publish">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Publish a message. Specify a topic to group messages for a specific topic.
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="message" class="form-label fs-5">message</label>
+					<div class="form-text"><i>The json message to publish</i></div>
+              		<textarea rows="4" class="form-control" id="message"></textarea>
+            	</div>
+				<div class="mb-3">
+              		<label for="topic" class="form-label fs-5">topic</label>
+					<div class="form-text"><i>The topic to publish to</i></div>
+              		<input class="form-control" id="topic">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="mqPublish()">Submit</button>
 			</form>

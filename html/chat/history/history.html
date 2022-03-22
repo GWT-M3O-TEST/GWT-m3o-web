@@ -20,17 +20,19 @@
 					<input type="hidden" class="form-control" id="service" value="chat">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">History</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">History</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="History">
-				  	<div id="endpointDesc" class="form-text"><i>List the messages in a chat</i></div>
+				  	<div id="endpointDesc" class="form-text"><i>List the messages in a chat
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
             	</div>
 				<div class="mb-3">
-              		<label for="room_id" class="form-label">room_id</label>
-              		<input class="form-control" id="room_id" placeholder="the chat room id to get">
+              		<label for="room_id" class="form-label fs-5">room_id</label>
+					<div class="form-text"><i>the chat room id to get</i></div>
+              		<input class="form-control" id="room_id">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="chatHistory()">Submit</button>
 			</form>

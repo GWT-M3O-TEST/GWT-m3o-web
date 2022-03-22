@@ -20,13 +20,39 @@
 					<input type="hidden" class="form-control" id="service" value="stock">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">OrderBook</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">OrderBook</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="OrderBook">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Get the historic order book and each trade by timestamp
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="date" class="form-label fs-5">date</label>
+					<div class="form-text"><i>the date in format YYYY-MM-dd</i></div>
+              		<input class="form-control" id="date">
+            	</div>
+				<div class="mb-3">
+              		<label for="end" class="form-label fs-5">end</label>
+					<div class="form-text"><i>optional RFC3339Nano end time e.g 2006-01-02T15:04:05.999999999Z07:00</i></div>
+              		<input class="form-control" id="end">
+            	</div>
+				<div class="mb-3">
+              		<label for="limit" class="form-label fs-5">limit</label>
+					<div class="form-text"><i>limit number of prices</i></div>
+              		<input class="form-control" id="limit">
+            	</div>
+				<div class="mb-3">
+              		<label for="start" class="form-label fs-5">start</label>
+					<div class="form-text"><i>optional RFC3339Nano start time e.g 2006-01-02T15:04:05.999999999Z07:00</i></div>
+              		<input class="form-control" id="start">
+            	</div>
+				<div class="mb-3">
+              		<label for="stock" class="form-label fs-5">stock</label>
+					<div class="form-text"><i>stock to retrieve e.g AAPL</i></div>
+              		<input class="form-control" id="stock">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="stockOrderBook()">Submit</button>
 			</form>

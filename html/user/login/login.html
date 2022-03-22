@@ -20,13 +20,30 @@
 					<input type="hidden" class="form-control" id="service" value="user">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Login</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Login</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Login">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Login using username or email. The response will return a new session for successful login,
+401 in the case of login failure and 500 for any other error
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="email" class="form-label fs-5">email</label>
+					<div class="form-text"><i>The email address of the user</i></div>
+              		<input class="form-control" id="email">
+            	</div>
+				<div class="mb-3">
+              		<label for="password" class="form-label fs-5">password</label>
+					<div class="form-text"><i>The password of the user</i></div>
+              		<input class="form-control" id="password">
+            	</div>
+				<div class="mb-3">
+              		<label for="username" class="form-label fs-5">username</label>
+					<div class="form-text"><i>The username of the user</i></div>
+              		<input class="form-control" id="username">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="userLogin()">Submit</button>
 			</form>

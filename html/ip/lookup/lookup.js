@@ -14,10 +14,26 @@ window.ipLookup = function () {
 	let m3o = new Client(token);
 
 	m3o.call(service, endpoint, request, function(response) {
-		resObj = JSON.parse(response);
+		// resObj = JSON.parse(response);
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">asn</th>
+			
+			<th scope="col">city</th>
+			
+			<th scope="col">continent</th>
+			
+			<th scope="col">country</th>
+			
+			<th scope="col">ip</th>
+			
+			<th scope="col">latitude</th>
+			
+			<th scope="col">longitude</th>
+			
+			<th scope="col">timezone</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

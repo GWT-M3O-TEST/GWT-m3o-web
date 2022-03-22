@@ -20,13 +20,20 @@
 					<input type="hidden" class="form-control" id="service" value="url">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Proxy</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Proxy</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Proxy">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Proxy returns the destination URL of a short URL.
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="shortURL" class="form-label fs-5">shortURL</label>
+					<div class="form-text"><i>short url ID, without the domain, eg. if your short URL is
+ `m3o.one/u/someshorturlid` then pass in `someshorturlid`</i></div>
+              		<input class="form-control" id="shortURL">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="urlProxy()">Submit</button>
 			</form>

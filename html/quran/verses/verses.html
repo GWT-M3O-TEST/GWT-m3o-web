@@ -20,43 +20,51 @@
 					<input type="hidden" class="form-control" id="service" value="quran">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Verses</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Verses</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Verses">
-				  	<div id="endpointDesc" class="form-text"><i>Lookup the verses (ayahs) for a chapter including 
- translation, interpretation and breakdown by individual
- words.</i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Lookup the verses (ayahs) for a chapter including
+translation, interpretation and breakdown by individual
+words.
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
             	</div>
 				<div class="mb-3">
-              		<label for="chapter" class="form-label">chapter</label>
-              		<input class="form-control" id="chapter" placeholder="The chapter id to retrieve">
+              		<label for="chapter" class="form-label fs-5">chapter</label>
+					<div class="form-text"><i>The chapter id to retrieve</i></div>
+              		<input class="form-control" id="chapter">
             	</div>
 				<div class="mb-3">
-              		<label for="interpret" class="form-label">interpret</label>
-              		<input class="form-control" id="interpret" placeholder="Return the interpretation (tafsir)">
+              		<label for="interpret" class="form-label fs-5">interpret</label>
+					<div class="form-text"><i>Return the interpretation (tafsir)</i></div>
+              		<input class="form-control" id="interpret">
             	</div>
 				<div class="mb-3">
-              		<label for="language" class="form-label">language</label>
-              		<input class="form-control" id="language" placeholder="The language of translation">
+              		<label for="language" class="form-label fs-5">language</label>
+					<div class="form-text"><i>The language of translation</i></div>
+              		<input class="form-control" id="language">
             	</div>
 				<div class="mb-3">
-              		<label for="limit" class="form-label">limit</label>
-              		<input class="form-control" id="limit" placeholder="The verses per page">
+              		<label for="limit" class="form-label fs-5">limit</label>
+					<div class="form-text"><i>The verses per page</i></div>
+              		<input class="form-control" id="limit">
             	</div>
 				<div class="mb-3">
-              		<label for="page" class="form-label">page</label>
-              		<input class="form-control" id="page" placeholder="The page number to request">
+              		<label for="page" class="form-label fs-5">page</label>
+					<div class="form-text"><i>The page number to request</i></div>
+              		<input class="form-control" id="page">
             	</div>
 				<div class="mb-3">
-              		<label for="translate" class="form-label">translate</label>
-              		<input class="form-control" id="translate" placeholder="Return alternate translations">
+              		<label for="translate" class="form-label fs-5">translate</label>
+					<div class="form-text"><i>Return alternate translations</i></div>
+              		<input class="form-control" id="translate">
             	</div>
 				<div class="mb-3">
-              		<label for="words" class="form-label">words</label>
-              		<input class="form-control" id="words" placeholder="Return the individual words with the verses">
+              		<label for="words" class="form-label fs-5">words</label>
+					<div class="form-text"><i>Return the individual words with the verses</i></div>
+              		<input class="form-control" id="words">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="quranVerses()">Submit</button>
 			</form>

@@ -20,13 +20,44 @@
 					<input type="hidden" class="form-control" id="service" value="nft">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Assets</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Assets</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Assets">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Return a list of assets
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="collection" class="form-label fs-5">collection</label>
+					<div class="form-text"><i>limit to members of a collection by slug name (case sensitive)</i></div>
+              		<input class="form-control" id="collection">
+            	</div>
+				<div class="mb-3">
+              		<label for="cursor" class="form-label fs-5">cursor</label>
+					<div class="form-text"><i>A cursor pointing to the page to retrieve</i></div>
+              		<input class="form-control" id="cursor">
+            	</div>
+				<div class="mb-3">
+              		<label for="limit" class="form-label fs-5">limit</label>
+					<div class="form-text"><i>limit returned assets</i></div>
+              		<input class="form-control" id="limit">
+            	</div>
+				<div class="mb-3">
+              		<label for="offset" class="form-label fs-5">offset</label>
+					<div class="form-text"><i>DEPRECATED offset for pagination, please use cursor instead</i></div>
+              		<input class="form-control" id="offset">
+            	</div>
+				<div class="mb-3">
+              		<label for="order" class="form-label fs-5">order</label>
+					<div class="form-text"><i>order "asc" or "desc"</i></div>
+              		<input class="form-control" id="order">
+            	</div>
+				<div class="mb-3">
+              		<label for="order_by" class="form-label fs-5">order_by</label>
+					<div class="form-text"><i>order by "sale_date", "sale_count", "sale_price", "total_price"</i></div>
+              		<input class="form-control" id="order_by">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="nftAssets()">Submit</button>
 			</form>

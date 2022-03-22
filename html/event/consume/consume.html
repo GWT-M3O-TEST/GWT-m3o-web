@@ -20,13 +20,29 @@
 					<input type="hidden" class="form-control" id="service" value="event">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Consume</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Consume</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Consume">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Consume events from a given topic.
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="group" class="form-label fs-5">group</label>
+					<div class="form-text"><i>Optional group for the subscription</i></div>
+              		<input class="form-control" id="group">
+            	</div>
+				<div class="mb-3">
+              		<label for="offset" class="form-label fs-5">offset</label>
+					<div class="form-text"><i>Optional offset to read from e.g "2006-01-02T15:04:05.999Z07:00"</i></div>
+              		<input class="form-control" id="offset">
+            	</div>
+				<div class="mb-3">
+              		<label for="topic" class="form-label fs-5">topic</label>
+					<div class="form-text"><i>The topic to subscribe to</i></div>
+              		<input class="form-control" id="topic">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="eventConsume()">Submit</button>
 			</form>

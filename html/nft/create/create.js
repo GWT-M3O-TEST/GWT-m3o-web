@@ -23,10 +23,12 @@ window.nftCreate = function () {
 	let m3o = new Client(token);
 
 	m3o.call(service, endpoint, request, function(response) {
-		resObj = JSON.parse(response);
+		// resObj = JSON.parse(response);
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">asset</th>
+			
 		  </tr>
 		</thead>
 		<tbody>

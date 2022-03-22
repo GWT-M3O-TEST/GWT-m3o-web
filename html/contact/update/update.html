@@ -20,13 +20,59 @@
 					<input type="hidden" class="form-control" id="service" value="contact">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Update</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Update</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Update">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Update a contact
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="addresses" class="form-label fs-5">addresses</label>
+					<div class="form-text"><i>optional, addresses</i></div>
+              		<input class="form-control" id="addresses">
+            	</div>
+				<div class="mb-3">
+              		<label for="birthday" class="form-label fs-5">birthday</label>
+					<div class="form-text"><i>optional, birthday</i></div>
+              		<input class="form-control" id="birthday">
+            	</div>
+				<div class="mb-3">
+              		<label for="emails" class="form-label fs-5">emails</label>
+					<div class="form-text"><i>optional, emails</i></div>
+              		<input class="form-control" id="emails">
+            	</div>
+				<div class="mb-3">
+              		<label for="id" class="form-label fs-5">id</label>
+					<div class="form-text"><i>required, the contact id</i></div>
+              		<input class="form-control" id="id">
+            	</div>
+				<div class="mb-3">
+              		<label for="links" class="form-label fs-5">links</label>
+					<div class="form-text"><i>optional, links</i></div>
+              		<input class="form-control" id="links">
+            	</div>
+				<div class="mb-3">
+              		<label for="name" class="form-label fs-5">name</label>
+					<div class="form-text"><i>required, the name</i></div>
+              		<input class="form-control" id="name">
+            	</div>
+				<div class="mb-3">
+              		<label for="note" class="form-label fs-5">note</label>
+					<div class="form-text"><i>optional, note</i></div>
+              		<input class="form-control" id="note">
+            	</div>
+				<div class="mb-3">
+              		<label for="phones" class="form-label fs-5">phones</label>
+					<div class="form-text"><i>optional, phone number</i></div>
+              		<input class="form-control" id="phones">
+            	</div>
+				<div class="mb-3">
+              		<label for="social_medias" class="form-label fs-5">social_medias</label>
+					<div class="form-text"><i>optional, social media</i></div>
+              		<textarea rows="4" class="form-control" id="social_medias"></textarea>
             	</div>
 				<button type="button" class="btn btn-primary" onclick="contactUpdate()">Submit</button>
 			</form>

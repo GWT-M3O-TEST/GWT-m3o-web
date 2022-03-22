@@ -20,13 +20,40 @@
 					<input type="hidden" class="form-control" id="service" value="prayer">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Times</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Times</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Times">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Get the prayer (salah) times for a location on a given date
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="date" class="form-label fs-5">date</label>
+					<div class="form-text"><i>optional date in YYYY-MM-DD format, otherwise uses today</i></div>
+              		<input class="form-control" id="date">
+            	</div>
+				<div class="mb-3">
+              		<label for="days" class="form-label fs-5">days</label>
+					<div class="form-text"><i>number of days to request times for</i></div>
+              		<input class="form-control" id="days">
+            	</div>
+				<div class="mb-3">
+              		<label for="latitude" class="form-label fs-5">latitude</label>
+					<div class="form-text"><i>optional latitude used in place of location</i></div>
+              		<input class="form-control" id="latitude">
+            	</div>
+				<div class="mb-3">
+              		<label for="location" class="form-label fs-5">location</label>
+					<div class="form-text"><i>location to retrieve prayer times for. 
+ this can be a specific address, city, etc</i></div>
+              		<input class="form-control" id="location">
+            	</div>
+				<div class="mb-3">
+              		<label for="longitude" class="form-label fs-5">longitude</label>
+					<div class="form-text"><i>optional longitude used in place of location</i></div>
+              		<input class="form-control" id="longitude">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="prayerTimes()">Submit</button>
 			</form>

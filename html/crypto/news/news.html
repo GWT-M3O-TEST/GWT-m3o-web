@@ -20,13 +20,19 @@
 					<input type="hidden" class="form-control" id="service" value="crypto">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">News</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">News</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="News">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Get news related to a currency
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="symbol" class="form-label fs-5">symbol</label>
+					<div class="form-text"><i>cryptocurrency ticker to request news for e.g BTC</i></div>
+              		<input class="form-control" id="symbol">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="cryptoNews()">Submit</button>
 			</form>

@@ -20,13 +20,24 @@
 					<input type="hidden" class="form-control" id="service" value="app">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Update</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Update</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Update">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Update the app. The latest source code will be downloaded, built and deployed.
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="env_vars" class="form-label fs-5">env_vars</label>
+					<div class="form-text"><i>Additional env vars to update</i></div>
+              		<textarea rows="4" class="form-control" id="env_vars"></textarea>
+            	</div>
+				<div class="mb-3">
+              		<label for="name" class="form-label fs-5">name</label>
+					<div class="form-text"><i>name of the app</i></div>
+              		<input class="form-control" id="name">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="appUpdate()">Submit</button>
 			</form>

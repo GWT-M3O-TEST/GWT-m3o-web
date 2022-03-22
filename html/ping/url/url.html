@@ -20,13 +20,24 @@
 					<input type="hidden" class="form-control" id="service" value="ping">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Url</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Url</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Url">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Ping a HTTP URL
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="address" class="form-label fs-5">address</label>
+					<div class="form-text"><i>address to use</i></div>
+              		<input class="form-control" id="address">
+            	</div>
+				<div class="mb-3">
+              		<label for="method" class="form-label fs-5">method</label>
+					<div class="form-text"><i>method of the call</i></div>
+              		<input class="form-control" id="method">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="pingUrl()">Submit</button>
 			</form>

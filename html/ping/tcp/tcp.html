@@ -20,13 +20,24 @@
 					<input type="hidden" class="form-control" id="service" value="ping">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Tcp</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Tcp</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Tcp">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Ping a TCP port is open
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="address" class="form-label fs-5">address</label>
+					<div class="form-text"><i>address to dial</i></div>
+              		<input class="form-control" id="address">
+            	</div>
+				<div class="mb-3">
+              		<label for="data" class="form-label fs-5">data</label>
+					<div class="form-text"><i>optional data to send</i></div>
+              		<input class="form-control" id="data">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="pingTcp()">Submit</button>
 			</form>

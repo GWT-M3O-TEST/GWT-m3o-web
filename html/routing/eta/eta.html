@@ -20,13 +20,34 @@
 					<input type="hidden" class="form-control" id="service" value="routing">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Eta</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Eta</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Eta">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Get the eta for a route from origin to destination. The eta is an estimated time based on car routes
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="destination" class="form-label fs-5">destination</label>
+					<div class="form-text"><i>The end point for the eta calculation</i></div>
+              		<textarea rows="4" class="form-control" id="destination"></textarea>
+            	</div>
+				<div class="mb-3">
+              		<label for="origin" class="form-label fs-5">origin</label>
+					<div class="form-text"><i>The starting point for the eta calculation</i></div>
+              		<textarea rows="4" class="form-control" id="origin"></textarea>
+            	</div>
+				<div class="mb-3">
+              		<label for="speed" class="form-label fs-5">speed</label>
+					<div class="form-text"><i>speed in kilometers</i></div>
+              		<input class="form-control" id="speed">
+            	</div>
+				<div class="mb-3">
+              		<label for="type" class="form-label fs-5">type</label>
+					<div class="form-text"><i>type of transport. Only "car" is supported currently.</i></div>
+              		<input class="form-control" id="type">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="routingEta()">Submit</button>
 			</form>

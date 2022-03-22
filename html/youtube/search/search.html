@@ -20,13 +20,19 @@
 					<input type="hidden" class="form-control" id="service" value="youtube">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Search</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Search</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Search">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Search for videos on YouTube
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="query" class="form-label fs-5">query</label>
+					<div class="form-text"><i>Query to search for</i></div>
+              		<input class="form-control" id="query">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="youtubeSearch()">Submit</button>
 			</form>

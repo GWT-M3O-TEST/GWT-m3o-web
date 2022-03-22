@@ -20,21 +20,24 @@
 					<input type="hidden" class="form-control" id="service" value="function">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Logs</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Logs</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Logs">
-				  	<div id="endpointDesc" class="form-text"><i>Get the logs for a function</i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Get the logs for a function
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
             	</div>
 				<div class="mb-3">
-              		<label for="logs_type" class="form-label">logs_type</label>
-              		<input class="form-control" id="logs_type" placeholder="type of logs to retrieve, currently supported options - "build"">
+              		<label for="logs_type" class="form-label fs-5">logs_type</label>
+					<div class="form-text"><i>type of logs to retrieve, currently supported options - "build"</i></div>
+              		<input class="form-control" id="logs_type">
             	</div>
 				<div class="mb-3">
-              		<label for="name" class="form-label">name</label>
-              		<input class="form-control" id="name" placeholder="the name of the function">
+              		<label for="name" class="form-label fs-5">name</label>
+					<div class="form-text"><i>the name of the function</i></div>
+              		<input class="form-control" id="name">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="functionLogs()">Submit</button>
 			</form>

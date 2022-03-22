@@ -20,13 +20,24 @@
 					<input type="hidden" class="form-control" id="service" value="helloworld">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Stream</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Stream</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Stream">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Stream a personalised Hello message
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="messages" class="form-label fs-5">messages</label>
+					<div class="form-text"><i>the number of messages to send back</i></div>
+              		<input class="form-control" id="messages">
+            	</div>
+				<div class="mb-3">
+              		<label for="name" class="form-label fs-5">name</label>
+					<div class="form-text"><i>name to append to the message e.g Alice</i></div>
+              		<input class="form-control" id="name">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="helloworldStream()">Submit</button>
 			</form>

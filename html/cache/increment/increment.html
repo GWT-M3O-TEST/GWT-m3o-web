@@ -20,13 +20,24 @@
 					<input type="hidden" class="form-control" id="service" value="cache">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Increment</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Increment</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Increment">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Increment a value (if it's a number). If key not found it is equivalent to set.
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="key" class="form-label fs-5">key</label>
+					<div class="form-text"><i>The key to increment</i></div>
+              		<input class="form-control" id="key">
+            	</div>
+				<div class="mb-3">
+              		<label for="value" class="form-label fs-5">value</label>
+					<div class="form-text"><i>The amount to increment the value by</i></div>
+              		<input class="form-control" id="value">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="cacheIncrement()">Submit</button>
 			</form>

@@ -20,13 +20,29 @@
 					<input type="hidden" class="form-control" id="service" value="thumbnail">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Screenshot</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Screenshot</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Screenshot">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Create a thumbnail screenshot by passing in a url, height and width
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="height" class="form-label fs-5">height</label>
+					<div class="form-text"><i>height of the browser window, optional</i></div>
+              		<input class="form-control" id="height">
+            	</div>
+				<div class="mb-3">
+              		<label for="url" class="form-label fs-5">url</label>
+					<div class="form-text"><i></i></div>
+              		<input class="form-control" id="url">
+            	</div>
+				<div class="mb-3">
+              		<label for="width" class="form-label fs-5">width</label>
+					<div class="form-text"><i>width of the browser window. optional</i></div>
+              		<input class="form-control" id="width">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="thumbnailScreenshot()">Submit</button>
 			</form>

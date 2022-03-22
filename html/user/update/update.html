@@ -20,13 +20,34 @@
 					<input type="hidden" class="form-control" id="service" value="user">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Update</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Update</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Update">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Update the account username or email
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="email" class="form-label fs-5">email</label>
+					<div class="form-text"><i>the new email address</i></div>
+              		<input class="form-control" id="email">
+            	</div>
+				<div class="mb-3">
+              		<label for="id" class="form-label fs-5">id</label>
+					<div class="form-text"><i>the account id</i></div>
+              		<input class="form-control" id="id">
+            	</div>
+				<div class="mb-3">
+              		<label for="profile" class="form-label fs-5">profile</label>
+					<div class="form-text"><i>the user profile as map<string,string></i></div>
+              		<textarea rows="4" class="form-control" id="profile"></textarea>
+            	</div>
+				<div class="mb-3">
+              		<label for="username" class="form-label fs-5">username</label>
+					<div class="form-text"><i>the new username</i></div>
+              		<input class="form-control" id="username">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="userUpdate()">Submit</button>
 			</form>

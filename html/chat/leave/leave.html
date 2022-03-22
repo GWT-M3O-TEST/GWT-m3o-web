@@ -20,13 +20,24 @@
 					<input type="hidden" class="form-control" id="service" value="chat">
 		  		</div>
 				<div class="mb-3">
-					<label for="endpoint" class="form-label fs-2 fw-bold">Leave</label>
+					<label for="endpoint" class="form-label fs-3 fw-bold">Leave</label>
 				  	<input type="hidden" class="form-control" id="endpoint" value="Leave">
-				  	<div id="endpointDesc" class="form-text"><i></i></div>
+				  	<div id="endpointDesc" class="form-text"><i>Leave a chat room
+</i></div>
 				</div>
 				<div class="mb-3">
-              		<label for="token" class="form-label">Token</label>
+              		<label for="token" class="form-label fs-5">Token</label>
               		<input class="form-control" id="token">
+            	</div>
+				<div class="mb-3">
+              		<label for="room_id" class="form-label fs-5">room_id</label>
+					<div class="form-text"><i>the chat room id</i></div>
+              		<input class="form-control" id="room_id">
+            	</div>
+				<div class="mb-3">
+              		<label for="user_id" class="form-label fs-5">user_id</label>
+					<div class="form-text"><i>the user id</i></div>
+              		<input class="form-control" id="user_id">
             	</div>
 				<button type="button" class="btn btn-primary" onclick="chatLeave()">Submit</button>
 			</form>

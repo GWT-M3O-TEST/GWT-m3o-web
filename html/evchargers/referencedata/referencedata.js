@@ -11,10 +11,32 @@ window.evchargersReferenceData = function () {
 	let m3o = new Client(token);
 
 	m3o.call(service, endpoint, request, function(response) {
-		resObj = JSON.parse(response);
+		// resObj = JSON.parse(response);
 		let res =`<table class="table">
 		<thead>
 		  <tr>
+			<th scope="col">charger_types</th>
+			
+			<th scope="col">checkin_status_types</th>
+			
+			<th scope="col">connection_types</th>
+			
+			<th scope="col">countries</th>
+			
+			<th scope="col">current_types</th>
+			
+			<th scope="col">data_providers</th>
+			
+			<th scope="col">operators</th>
+			
+			<th scope="col">status_types</th>
+			
+			<th scope="col">submission_status_types</th>
+			
+			<th scope="col">usage_types</th>
+			
+			<th scope="col">user_comment_types</th>
+			
 		  </tr>
 		</thead>
 		<tbody>
